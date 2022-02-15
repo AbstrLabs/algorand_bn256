@@ -1,13 +1,15 @@
 import sys
 import yaml
 
-'''
+"""
 Overwrites scParam values if args is defined and has keys common from scParam
-'''
+"""
+
+
 def parse_params(args, scParam):
 
     # decode external parameter and update current values.
-    # (if an external paramter is passed)
+    # (if an external parameter is passed)
     try:
         param = yaml.safe_load(args)
         for key, value in param.items():
