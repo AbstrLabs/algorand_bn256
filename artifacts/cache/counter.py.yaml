@@ -1,0 +1,270 @@
+filename: counter.py
+timestamp: 1644927529
+compiled: BCACAQAmAQVDb3VudDEYIxJAAIgxGSISQAB/MRmBAhJAAHUxGYEEEkAAZzEZgQUSQABZMRkjEkAAAQAxGyMSQABIMgQiEjYaAIADQWRkEhBAACsyBCISNhoAgAZEZWR1Y3QSEEAAAQAoZDUANAAjDUAAAiJDKDQAIglnQv/1KGQ1ACg0ACIIZyJDIkMyCTEAEkMyCTEAEkMiQyJDKCNnIkM=
+compiledHash: F2RS7FEQKW34QFWPXLZKFEI4SFIHLR4YWOFLA5VEFUVVUEFOR4EGOZHZ2M
+srcHash: 1488352748
+base64ToBytes:
+  - 4
+  - 32
+  - 2
+  - 1
+  - 0
+  - 38
+  - 1
+  - 5
+  - 67
+  - 111
+  - 117
+  - 110
+  - 116
+  - 49
+  - 24
+  - 35
+  - 18
+  - 64
+  - 0
+  - 136
+  - 49
+  - 25
+  - 34
+  - 18
+  - 64
+  - 0
+  - 127
+  - 49
+  - 25
+  - 129
+  - 2
+  - 18
+  - 64
+  - 0
+  - 117
+  - 49
+  - 25
+  - 129
+  - 4
+  - 18
+  - 64
+  - 0
+  - 103
+  - 49
+  - 25
+  - 129
+  - 5
+  - 18
+  - 64
+  - 0
+  - 89
+  - 49
+  - 25
+  - 35
+  - 18
+  - 64
+  - 0
+  - 1
+  - 0
+  - 49
+  - 27
+  - 35
+  - 18
+  - 64
+  - 0
+  - 72
+  - 50
+  - 4
+  - 34
+  - 18
+  - 54
+  - 26
+  - 0
+  - 128
+  - 3
+  - 65
+  - 100
+  - 100
+  - 18
+  - 16
+  - 64
+  - 0
+  - 43
+  - 50
+  - 4
+  - 34
+  - 18
+  - 54
+  - 26
+  - 0
+  - 128
+  - 6
+  - 68
+  - 101
+  - 100
+  - 117
+  - 99
+  - 116
+  - 18
+  - 16
+  - 64
+  - 0
+  - 1
+  - 0
+  - 40
+  - 100
+  - 53
+  - 0
+  - 52
+  - 0
+  - 35
+  - 13
+  - 64
+  - 0
+  - 2
+  - 34
+  - 67
+  - 40
+  - 52
+  - 0
+  - 34
+  - 9
+  - 103
+  - 66
+  - 255
+  - 245
+  - 40
+  - 100
+  - 53
+  - 0
+  - 40
+  - 52
+  - 0
+  - 34
+  - 8
+  - 103
+  - 34
+  - 67
+  - 34
+  - 67
+  - 50
+  - 9
+  - 49
+  - 0
+  - 18
+  - 67
+  - 50
+  - 9
+  - 49
+  - 0
+  - 18
+  - 67
+  - 34
+  - 67
+  - 34
+  - 67
+  - 40
+  - 35
+  - 103
+  - 34
+  - 67
+tealCode: |
+  #pragma version 4
+  txn ApplicationID
+  int 0
+  ==
+  bnz main_l20
+  txn OnCompletion
+  int OptIn
+  ==
+  bnz main_l19
+  txn OnCompletion
+  int CloseOut
+  ==
+  bnz main_l18
+  txn OnCompletion
+  int UpdateApplication
+  ==
+  bnz main_l17
+  txn OnCompletion
+  int DeleteApplication
+  ==
+  bnz main_l16
+  txn OnCompletion
+  int NoOp
+  ==
+  bnz main_l7
+  err
+  main_l7:
+  txn NumAppArgs
+  int 0
+  ==
+  bnz main_l15
+  global GroupSize
+  int 1
+  ==
+  txna ApplicationArgs 0
+  byte "Add"
+  ==
+  &&
+  bnz main_l14
+  global GroupSize
+  int 1
+  ==
+  txna ApplicationArgs 0
+  byte "Deduct"
+  ==
+  &&
+  bnz main_l11
+  err
+  main_l11:
+  byte "Count"
+  app_global_get
+  store 0
+  load 0
+  int 0
+  >
+  bnz main_l13
+  main_l12:
+  int 1
+  return
+  main_l13:
+  byte "Count"
+  load 0
+  int 1
+  -
+  app_global_put
+  b main_l12
+  main_l14:
+  byte "Count"
+  app_global_get
+  store 0
+  byte "Count"
+  load 0
+  int 1
+  +
+  app_global_put
+  int 1
+  return
+  main_l15:
+  int 1
+  return
+  main_l16:
+  global CreatorAddress
+  txn Sender
+  ==
+  return
+  main_l17:
+  global CreatorAddress
+  txn Sender
+  ==
+  return
+  main_l18:
+  int 1
+  return
+  main_l19:
+  int 1
+  return
+  main_l20:
+  byte "Count"
+  int 0
+  app_global_put
+  int 1
+  return
