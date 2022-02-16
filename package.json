@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "@algo-builder/algob": "^3.2.0"
+    "@algo-builder/algob": "^3.2.0",
+    "chai-bytes": "^0.1.2"
   },
   "devDependencies": {
     "chai": "^4.3.6"
