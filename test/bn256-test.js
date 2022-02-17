@@ -15,7 +15,9 @@ describe("bn128 py contract", function () {
     fromAccount: john.account,
     appID: 0,
     payFlags: { totalFee: fee },
-    appArgs: ["str:upload", new Uint8Array(fs.readFileSync('assets/tls_primary_in'))]
+    // appArgs: ["str:upload", new Uint8Array(fs.readFileSync('assets/tls_primary_in'))]
+    appArgs: ["str:expensive"]
+
   };
 
   let runtime;

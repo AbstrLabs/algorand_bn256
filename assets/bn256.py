@@ -14,12 +14,47 @@ def bn256_program():
     handle_updateapp = Return(Global.creator_address() == Txn.sender())
     handle_deleteapp = Return(Global.creator_address() == Txn.sender())
     scratchCount = ScratchVar(TealType.uint64)
+    scratchHash = ScratchVar(TealType.bytes)
 
     upload = Seq(
         [
             # at most 100 bytes can be stored.
             # App.globalPut(Bytes("zkinput"), Txn.application_args[1]),
             scratchCount.store(GetByte(Txn.application_args[1], Int(33000))),
+            Return(Int(1)),
+        ]
+    )
+
+    expensive = Seq(
+        [
+            scratchHash.store(Keccak256(Txn.application_args[0])),
+            scratchHash.store(Keccak256(Txn.application_args[0])),
+            scratchHash.store(Keccak256(Txn.application_args[0])),
+            scratchHash.store(Keccak256(Txn.application_args[0])),
+            scratchHash.store(Keccak256(Txn.application_args[0])),
+            scratchHash.store(Keccak256(Txn.application_args[0])),
+            scratchHash.store(Keccak256(Txn.application_args[0])),
+            scratchHash.store(Keccak256(Txn.application_args[0])),
+            scratchHash.store(Keccak256(Txn.application_args[0])),
+            scratchHash.store(Keccak256(Txn.application_args[0])),
+            scratchHash.store(Keccak256(Txn.application_args[0])),
+            scratchHash.store(Keccak256(Txn.application_args[0])),
+            scratchHash.store(Keccak256(Txn.application_args[0])),
+            scratchHash.store(Keccak256(Txn.application_args[0])),
+            scratchHash.store(Keccak256(Txn.application_args[0])),
+            scratchHash.store(Keccak256(Txn.application_args[0])),
+            scratchHash.store(Keccak256(Txn.application_args[0])),
+            scratchHash.store(Keccak256(Txn.application_args[0])),
+            scratchHash.store(Keccak256(Txn.application_args[0])),
+            scratchHash.store(Keccak256(Txn.application_args[0])),
+            scratchHash.store(Keccak256(Txn.application_args[0])),
+            scratchHash.store(Keccak256(Txn.application_args[0])),
+            scratchHash.store(Keccak256(Txn.application_args[0])),
+            scratchHash.store(Keccak256(Txn.application_args[0])),
+            scratchHash.store(Keccak256(Txn.application_args[0])),
+            scratchHash.store(Keccak256(Txn.application_args[0])),
+            scratchHash.store(Keccak256(Txn.application_args[0])),
+            scratchHash.store(Keccak256(Txn.application_args[0])),
             Return(Int(1)),
         ]
     )
@@ -36,6 +71,13 @@ def bn256_program():
             ),
             upload,
         ],
+        [
+            And(
+                Global.group_size() == Int(1),
+                Txn.application_args[0] == Bytes("expensive"),
+            ),
+            expensive,
+        ],
     )
 
     program = Cond(
@@ -50,4 +92,4 @@ def bn256_program():
 
 
 if __name__ == "__main__":
-    print(compileTeal(bn256_program(), Mode.Application, version=4))
+    print(compileTeal(bn256_program(), Mode.Application, version=5))
