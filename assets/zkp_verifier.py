@@ -5,6 +5,10 @@ from algobpy.parse import parse_params
 from pyteal import *
 
 
+def flatten(t):
+    return [item for sublist in t for item in sublist]
+
+
 def zkp_verifier_program(VK_ALPHA, VK_BETA, VK_DELTA, VK_GAMMA, VK_IC, INPUT_LEN):
     handle_creation = Return(Int(1))
     handle_opt_in = Return(Int(1))
@@ -13,18 +17,22 @@ def zkp_verifier_program(VK_ALPHA, VK_BETA, VK_DELTA, VK_GAMMA, VK_IC, INPUT_LEN
     handle_deleteapp = Return(Global.creator_address() == Txn.sender())
 
     vk_x = ScratchVar(TealType.bytes)
-    i = ScratchVar(TealType.uint64)
+
+    def vk_x_single_step(i):
+        return [
+            # todo: change to bn256 scalar mut
+            vk_x.store(SetByte(vk_x.load(), Int(i), Int(i))),
+            # todo: change to bn256 add
+            vk_x.store(SetByte(vk_x.load(), Int(i), Int(i))),
+            Log(vk_x.load()),
+        ]
+
+    vk_x_loop = flatten([vk_x_single_step(i) for i in range(INPUT_LEN)])
 
     verify = Seq(
         [
             vk_x.store(Bytes('base16', '00'* 64)),
-            For(i.store(Int(0)), i.load() < Int(INPUT_LEN), i.store(i.load() + Int(1))).Do(Seq(
-                # todo: change to bn256 scalar mut
-                vk_x.store(SetByte(vk_x.load(), i.load(), i.load())),
-                # todo: change to bn256 add
-                vk_x.store(SetByte(vk_x.load(), i.load(), i.load())),
-                Log(vk_x.load()),
-            )),
+            *vk_x_loop,
             # todo: change to bn256 add
             vk_x.store(SetByte(vk_x.load(), Int(10), Int(10))),
             # todo: teal does not support 256 bit integer arithmetic, caller pre calc for now
