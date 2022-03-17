@@ -1,56 +1,700 @@
 filename: zkp_verifier.py
-timestamp: 1647420270
-compiled: BiADAQAKMRgjEkAAzDEZIhJAAMMxGYECEkAAuTEZgQQSQACrMRmBBRJAAJ0xGSMSQAABADEbIxJAAIwyBIEQEjYaAIAGdmVyaWZ5EhBAAAEAgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANQAjNQE0AYEJDEAACTQAJCRWNQAiQzQANAE0AVY1ADQANAE0AVY1ADQAsDQBIgg1AUL/0SJDMgkxABJDMgkxABJDIkMiQyJD
-compiledHash: DLQZEMO6RLCDNGTFAK4MH3YGN7GKCIXBDHELTEQGT5UUUBVGZRXIFCQCXU
-srcHash: 423574747
+timestamp: 1647500352
+compiled: BiADAUAAJgGABQW8VFhtcyxa1WuEUFTaGFSj218lqsPSgJ8PDRyiF9DCGQfvC2UvvRJc5L5NY/NZQqMfxf4vYHTTWdZnO8nKL2EOgB+JvbnhLLA6+smVC+yxESNhllMIGxhKZQf8ewmecyrcjeaW9dhGnTAMbohj5tlGdoeQ16TfAueLbtvXXO0tKs32GnLAKW4ztlZxjSPB+SfvcJb9/tTeoPyq/lAx4SkO1W0LWMGII4jA8/NRTodfSb1pZaCcIrPWjcQwW0rIlxZWGCCu7q/eMIC+wgi9e3aEQ3uv05L6orvCbEh/x2opEEiHTeYVducA4iDBJqpzj+CquSs6bReqNvJxF+7HQ80EJVxK5J4WSFevp4YR6Dg6Bdf1nQUZLvS7Ci/yW71rrgNj3KSaHV6ydSgyuqRe2soa/W9mUah+QrNjqfV0foafHcSSenaulYAf1nS5iVrctbpxAVOjEM1pz1z30ItJwzsU1RRtPwDyqrYVNEcZc0H4Nd42RhVZfMYQ7zxoHL6OMCqpQjwX9fXRjE/4aAPZ4hmLn7qHQGYs3XC+rM7S1gYcLNaqtmaNq1R1pDbnfhZoFK3vxtteZDT6kzTcsz9LnJ8OW63sH3y8lAYu5DnCmJRF59+HNLNiP9GdIulsK6VKZAu8Zy6Vwxh0T+EFMVpBPXWfVGa+bAhm4JiPmjtO1ysCDQyP/hgCMB1VJ+njc97qi+rxC8o55Y1mYjjpf7ZBuYMe6eQ8YIBpbTOKUYZDxpl6I9tK1pkiSOnrKlcOGghxgwmurbFtDP+mu3fAFJasiOSDRhaVfRdNMDVIt1phstXLJ3hxMzeGuBBNyj8SunKQFNv/0zOtar60Hnq0nzrZynoxGCQSQAFcMRkiEkABUzEZgQISQAFJMRmBBBJAATsxGYEFEkABLTEZJBJAAAEAMRskEkABHDIEgRASNhoAgAZ2ZXJpZnkSEEAAAQCAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1ADQAKFdAQDYaAVcABJiYNQA0ALA0AChXgEA2GgFXBASYmDUANACwNAAoV8BANhoBVwgEmJg1ADQAsDQAKIGAAiNYNhoBVwwEmJg1ADQAsDQAKIHAAiNYNhoBVxAEmJg1ADQAsDQAKIGAAyNYNhoBVxQEmJg1ADQAsDQAKIHAAyNYNhoBVxgEmJg1ADQAsDQAKIGABCNYNhoBVxwEmJg1ADQAsDQAKIHABCNYNhoBVyAEmJg1ADQAsDQAKFcAQJg1ACJDIkMyCTEAEkMyCTEAEkMiQyJDIkM=
+compiledHash: RJKA2HN4QCNT7X4HXIFJ3AK6LMC7AC72OLNAV7FJ2RBVOOP5REVVTSE4NY
+srcHash: 3407891018
 base64ToBytes:
   - 6
   - 32
   - 3
   - 1
-  - 0
-  - 10
-  - 49
-  - 24
-  - 35
-  - 18
   - 64
   - 0
-  - 204
+  - 38
+  - 1
+  - 128
+  - 5
+  - 5
+  - 188
+  - 84
+  - 88
+  - 109
+  - 115
+  - 44
+  - 90
+  - 213
+  - 107
+  - 132
+  - 80
+  - 84
+  - 218
+  - 24
+  - 84
+  - 163
+  - 219
+  - 95
+  - 37
+  - 170
+  - 195
+  - 210
+  - 128
+  - 159
+  - 15
+  - 13
+  - 28
+  - 162
+  - 23
+  - 208
+  - 194
+  - 25
+  - 7
+  - 239
+  - 11
+  - 101
+  - 47
+  - 189
+  - 18
+  - 92
+  - 228
+  - 190
+  - 77
+  - 99
+  - 243
+  - 89
+  - 66
+  - 163
+  - 31
+  - 197
+  - 254
+  - 47
+  - 96
+  - 116
+  - 211
+  - 89
+  - 214
+  - 103
+  - 59
+  - 201
+  - 202
+  - 47
+  - 97
+  - 14
+  - 128
+  - 31
+  - 137
+  - 189
+  - 185
+  - 225
+  - 44
+  - 176
+  - 58
+  - 250
+  - 201
+  - 149
+  - 11
+  - 236
+  - 177
+  - 17
+  - 35
+  - 97
+  - 150
+  - 83
+  - 8
+  - 27
+  - 24
+  - 74
+  - 101
+  - 7
+  - 252
+  - 123
+  - 9
+  - 158
+  - 115
+  - 42
+  - 220
+  - 141
+  - 230
+  - 150
+  - 245
+  - 216
+  - 70
+  - 157
+  - 48
+  - 12
+  - 110
+  - 136
+  - 99
+  - 230
+  - 217
+  - 70
+  - 118
+  - 135
+  - 144
+  - 215
+  - 164
+  - 223
+  - 2
+  - 231
+  - 139
+  - 110
+  - 219
+  - 215
+  - 92
+  - 237
+  - 45
+  - 42
+  - 205
+  - 246
+  - 26
+  - 114
+  - 192
+  - 41
+  - 110
+  - 51
+  - 182
+  - 86
+  - 113
+  - 141
+  - 35
+  - 193
+  - 249
+  - 39
+  - 239
+  - 112
+  - 150
+  - 253
+  - 254
+  - 212
+  - 222
+  - 160
+  - 252
+  - 170
+  - 254
+  - 80
+  - 49
+  - 225
+  - 41
+  - 14
+  - 213
+  - 109
+  - 11
+  - 88
+  - 193
+  - 136
+  - 35
+  - 136
+  - 192
+  - 243
+  - 243
+  - 81
+  - 78
+  - 135
+  - 95
+  - 73
+  - 189
+  - 105
+  - 101
+  - 160
+  - 156
+  - 34
+  - 179
+  - 214
+  - 141
+  - 196
+  - 48
+  - 91
+  - 74
+  - 200
+  - 151
+  - 22
+  - 86
+  - 24
+  - 32
+  - 174
+  - 238
+  - 175
+  - 222
+  - 48
+  - 128
+  - 190
+  - 194
+  - 8
+  - 189
+  - 123
+  - 118
+  - 132
+  - 67
+  - 123
+  - 175
+  - 211
+  - 146
+  - 250
+  - 162
+  - 187
+  - 194
+  - 108
+  - 72
+  - 127
+  - 199
+  - 106
+  - 41
+  - 16
+  - 72
+  - 135
+  - 77
+  - 230
+  - 21
+  - 118
+  - 231
+  - 0
+  - 226
+  - 32
+  - 193
+  - 38
+  - 170
+  - 115
+  - 143
+  - 224
+  - 170
+  - 185
+  - 43
+  - 58
+  - 109
+  - 23
+  - 170
+  - 54
+  - 242
+  - 113
+  - 23
+  - 238
+  - 199
+  - 67
+  - 205
+  - 4
+  - 37
+  - 92
+  - 74
+  - 228
+  - 158
+  - 22
+  - 72
+  - 87
+  - 175
+  - 167
+  - 134
+  - 17
+  - 232
+  - 56
+  - 58
+  - 5
+  - 215
+  - 245
+  - 157
+  - 5
+  - 25
+  - 46
+  - 244
+  - 187
+  - 10
+  - 47
+  - 242
+  - 91
+  - 189
+  - 107
+  - 174
+  - 3
+  - 99
+  - 220
+  - 164
+  - 154
+  - 29
+  - 94
+  - 178
+  - 117
+  - 40
+  - 50
+  - 186
+  - 164
+  - 94
+  - 218
+  - 202
+  - 26
+  - 253
+  - 111
+  - 102
+  - 81
+  - 168
+  - 126
+  - 66
+  - 179
+  - 99
+  - 169
+  - 245
+  - 116
+  - 126
+  - 134
+  - 159
+  - 29
+  - 196
+  - 146
+  - 122
+  - 118
+  - 174
+  - 149
+  - 128
+  - 31
+  - 214
+  - 116
+  - 185
+  - 137
+  - 90
+  - 220
+  - 181
+  - 186
+  - 113
+  - 1
+  - 83
+  - 163
+  - 16
+  - 205
+  - 105
+  - 207
+  - 92
+  - 247
+  - 208
+  - 139
+  - 73
+  - 195
+  - 59
+  - 20
+  - 213
+  - 20
+  - 109
+  - 63
+  - 0
+  - 242
+  - 170
+  - 182
+  - 21
+  - 52
+  - 71
+  - 25
+  - 115
+  - 65
+  - 248
+  - 53
+  - 222
+  - 54
+  - 70
+  - 21
+  - 89
+  - 124
+  - 198
+  - 16
+  - 239
+  - 60
+  - 104
+  - 28
+  - 190
+  - 142
+  - 48
+  - 42
+  - 169
+  - 66
+  - 60
+  - 23
+  - 245
+  - 245
+  - 209
+  - 140
+  - 79
+  - 248
+  - 104
+  - 3
+  - 217
+  - 226
+  - 25
+  - 139
+  - 159
+  - 186
+  - 135
+  - 64
+  - 102
+  - 44
+  - 221
+  - 112
+  - 190
+  - 172
+  - 206
+  - 210
+  - 214
+  - 6
+  - 28
+  - 44
+  - 214
+  - 170
+  - 182
+  - 102
+  - 141
+  - 171
+  - 84
+  - 117
+  - 164
+  - 54
+  - 231
+  - 126
+  - 22
+  - 104
+  - 20
+  - 173
+  - 239
+  - 198
+  - 219
+  - 94
+  - 100
+  - 52
+  - 250
+  - 147
+  - 52
+  - 220
+  - 179
+  - 63
+  - 75
+  - 156
+  - 159
+  - 14
+  - 91
+  - 173
+  - 236
+  - 31
+  - 124
+  - 188
+  - 148
+  - 6
+  - 46
+  - 228
+  - 57
+  - 194
+  - 152
+  - 148
+  - 69
+  - 231
+  - 223
+  - 135
+  - 52
+  - 179
+  - 98
+  - 63
+  - 209
+  - 157
+  - 34
+  - 233
+  - 108
+  - 43
+  - 165
+  - 74
+  - 100
+  - 11
+  - 188
+  - 103
+  - 46
+  - 149
+  - 195
+  - 24
+  - 116
+  - 79
+  - 225
+  - 5
+  - 49
+  - 90
+  - 65
+  - 61
+  - 117
+  - 159
+  - 84
+  - 102
+  - 190
+  - 108
+  - 8
+  - 102
+  - 224
+  - 152
+  - 143
+  - 154
+  - 59
+  - 78
+  - 215
+  - 43
+  - 2
+  - 13
+  - 12
+  - 143
+  - 254
+  - 24
+  - 2
+  - 48
+  - 29
+  - 85
+  - 39
+  - 233
+  - 227
+  - 115
+  - 222
+  - 234
+  - 139
+  - 234
+  - 241
+  - 11
+  - 202
+  - 57
+  - 229
+  - 141
+  - 102
+  - 98
+  - 56
+  - 233
+  - 127
+  - 182
+  - 65
+  - 185
+  - 131
+  - 30
+  - 233
+  - 228
+  - 60
+  - 96
+  - 128
+  - 105
+  - 109
+  - 51
+  - 138
+  - 81
+  - 134
+  - 67
+  - 198
+  - 153
+  - 122
+  - 35
+  - 219
+  - 74
+  - 214
+  - 153
+  - 34
+  - 72
+  - 233
+  - 235
+  - 42
+  - 87
+  - 14
+  - 26
+  - 8
+  - 113
+  - 131
+  - 9
+  - 174
+  - 173
+  - 177
+  - 109
+  - 12
+  - 255
+  - 166
+  - 187
+  - 119
+  - 192
+  - 20
+  - 150
+  - 172
+  - 136
+  - 228
+  - 131
+  - 70
+  - 22
+  - 149
+  - 125
+  - 23
+  - 77
+  - 48
+  - 53
+  - 72
+  - 183
+  - 90
+  - 97
+  - 178
+  - 213
+  - 203
+  - 39
+  - 120
+  - 113
+  - 51
+  - 55
+  - 134
+  - 184
+  - 16
+  - 77
+  - 202
+  - 63
+  - 18
+  - 186
+  - 114
+  - 144
+  - 20
+  - 219
+  - 255
+  - 211
+  - 51
+  - 173
+  - 106
+  - 190
+  - 180
+  - 30
+  - 122
+  - 180
+  - 159
+  - 58
+  - 217
+  - 202
+  - 122
+  - 49
+  - 24
+  - 36
+  - 18
+  - 64
+  - 1
+  - 92
   - 49
   - 25
   - 34
   - 18
   - 64
-  - 0
-  - 195
+  - 1
+  - 83
   - 49
   - 25
   - 129
   - 2
   - 18
   - 64
-  - 0
-  - 185
+  - 1
+  - 73
   - 49
   - 25
   - 129
   - 4
   - 18
   - 64
-  - 0
-  - 171
+  - 1
+  - 59
   - 49
   - 25
   - 129
   - 5
   - 18
   - 64
-  - 0
-  - 157
+  - 1
+  - 45
   - 49
   - 25
-  - 35
+  - 36
   - 18
   - 64
   - 0
@@ -58,11 +702,11 @@ base64ToBytes:
   - 0
   - 49
   - 27
-  - 35
+  - 36
   - 18
   - 64
-  - 0
-  - 140
+  - 1
+  - 28
   - 50
   - 4
   - 129
@@ -153,56 +797,200 @@ base64ToBytes:
   - 0
   - 53
   - 0
-  - 35
-  - 53
-  - 1
   - 52
-  - 1
-  - 129
-  - 9
-  - 12
+  - 0
+  - 40
+  - 87
   - 64
-  - 0
-  - 9
-  - 52
-  - 0
-  - 36
-  - 36
-  - 86
-  - 53
-  - 0
-  - 34
-  - 67
-  - 52
-  - 0
-  - 52
+  - 64
+  - 54
+  - 26
   - 1
-  - 52
-  - 1
-  - 86
-  - 53
+  - 87
   - 0
-  - 52
-  - 0
-  - 52
-  - 1
-  - 52
-  - 1
-  - 86
+  - 4
+  - 152
+  - 152
   - 53
   - 0
   - 52
   - 0
   - 176
   - 52
+  - 0
+  - 40
+  - 87
+  - 128
+  - 64
+  - 54
+  - 26
   - 1
-  - 34
-  - 8
+  - 87
+  - 4
+  - 4
+  - 152
+  - 152
   - 53
+  - 0
+  - 52
+  - 0
+  - 176
+  - 52
+  - 0
+  - 40
+  - 87
+  - 192
+  - 64
+  - 54
+  - 26
   - 1
-  - 66
-  - 255
-  - 209
+  - 87
+  - 8
+  - 4
+  - 152
+  - 152
+  - 53
+  - 0
+  - 52
+  - 0
+  - 176
+  - 52
+  - 0
+  - 40
+  - 129
+  - 128
+  - 2
+  - 35
+  - 88
+  - 54
+  - 26
+  - 1
+  - 87
+  - 12
+  - 4
+  - 152
+  - 152
+  - 53
+  - 0
+  - 52
+  - 0
+  - 176
+  - 52
+  - 0
+  - 40
+  - 129
+  - 192
+  - 2
+  - 35
+  - 88
+  - 54
+  - 26
+  - 1
+  - 87
+  - 16
+  - 4
+  - 152
+  - 152
+  - 53
+  - 0
+  - 52
+  - 0
+  - 176
+  - 52
+  - 0
+  - 40
+  - 129
+  - 128
+  - 3
+  - 35
+  - 88
+  - 54
+  - 26
+  - 1
+  - 87
+  - 20
+  - 4
+  - 152
+  - 152
+  - 53
+  - 0
+  - 52
+  - 0
+  - 176
+  - 52
+  - 0
+  - 40
+  - 129
+  - 192
+  - 3
+  - 35
+  - 88
+  - 54
+  - 26
+  - 1
+  - 87
+  - 24
+  - 4
+  - 152
+  - 152
+  - 53
+  - 0
+  - 52
+  - 0
+  - 176
+  - 52
+  - 0
+  - 40
+  - 129
+  - 128
+  - 4
+  - 35
+  - 88
+  - 54
+  - 26
+  - 1
+  - 87
+  - 28
+  - 4
+  - 152
+  - 152
+  - 53
+  - 0
+  - 52
+  - 0
+  - 176
+  - 52
+  - 0
+  - 40
+  - 129
+  - 192
+  - 4
+  - 35
+  - 88
+  - 54
+  - 26
+  - 1
+  - 87
+  - 32
+  - 4
+  - 152
+  - 152
+  - 53
+  - 0
+  - 52
+  - 0
+  - 176
+  - 52
+  - 0
+  - 40
+  - 87
+  - 0
+  - 64
+  - 152
+  - 53
+  - 0
+  - 34
+  - 67
   - 34
   - 67
   - 50
@@ -232,7 +1020,7 @@ tealCode: >
 
   ==
 
-  bnz main_l19
+  bnz main_l16
 
   txn OnCompletion
 
@@ -240,7 +1028,7 @@ tealCode: >
 
   ==
 
-  bnz main_l18
+  bnz main_l15
 
   txn OnCompletion
 
@@ -248,7 +1036,7 @@ tealCode: >
 
   ==
 
-  bnz main_l17
+  bnz main_l14
 
   txn OnCompletion
 
@@ -256,7 +1044,7 @@ tealCode: >
 
   ==
 
-  bnz main_l16
+  bnz main_l13
 
   txn OnCompletion
 
@@ -264,7 +1052,7 @@ tealCode: >
 
   ==
 
-  bnz main_l15
+  bnz main_l12
 
   txn OnCompletion
 
@@ -284,7 +1072,7 @@ tealCode: >
 
   ==
 
-  bnz main_l14
+  bnz main_l11
 
   global GroupSize
 
@@ -310,53 +1098,19 @@ tealCode: >
 
   store 0
 
-  int 0
-
-  store 1
-
-  main_l11:
-
-  load 1
-
-  int 9
-
-  <
-
-  bnz main_l13
-
   load 0
 
-  int 10
+  byte 0x05bc54586d732c5ad56b845054da1854a3db5f25aac3d2809f0f0d1ca217d0c21907ef0b652fbd125ce4be4d63f35942a31fc5fe2f6074d359d6673bc9ca2f610e801f89bdb9e12cb03afac9950becb11123619653081b184a6507fc7b099e732adc8de696f5d8469d300c6e8863e6d946768790d7a4df02e78b6edbd75ced2d2acdf61a72c0296e33b656718d23c1f927ef7096fdfed4dea0fcaafe5031e1290ed56d0b58c1882388c0f3f3514e875f49bd6965a09c22b3d68dc4305b4ac89716561820aeeeafde3080bec208bd7b7684437bafd392faa2bbc26c487fc76a291048874de61576e700e220c126aa738fe0aab92b3a6d17aa36f27117eec743cd04255c4ae49e164857afa78611e8383a05d7f59d05192ef4bb0a2ff25bbd6bae0363dca49a1d5eb2752832baa45edaca1afd6f6651a87e42b363a9f5747e869f1dc4927a76ae95801fd674b9895adcb5ba710153a310cd69cf5cf7d08b49c33b14d5146d3f00f2aab6153447197341f835de364615597cc610ef3c681cbe8e302aa9423c17f5f5d18c4ff86803d9e2198b9fba8740662cdd70beacced2d6061c2cd6aab6668dab5475a436e77e166814adefc6db5e6434fa9334dcb33f4b9c9f0e5badec1f7cbc94062ee439c2989445e7df8734b3623fd19d22e96c2ba54a640bbc672e95c318744fe105315a413d759f5466be6c0866e0988f9a3b4ed72b020d0c8ffe1802301d5527e9e373deea8beaf10bca39e58d666238e97fb641b9831ee9e43c6080696d338a518643c6997a23db4ad6992248e9eb2a570e1a08718309aeadb16d0cffa6bb77c01496ac88e4834616957d174d303548b75a61b2d5cb277871333786b8104dca3f12ba729014dbffd333ad6abeb41e7ab49f3ad9ca7a
 
-  int 10
+  extract 64 64
 
-  setbyte
+  txna ApplicationArgs 1
 
-  store 0
+  extract 0 4
 
-  int 1
+  bn256_add
 
-  return
-
-  main_l13:
-
-  load 0
-
-  load 1
-
-  load 1
-
-  setbyte
-
-  store 0
-
-  load 0
-
-  load 1
-
-  load 1
-
-  setbyte
+  bn256_add
 
   store 0
 
@@ -364,15 +1118,229 @@ tealCode: >
 
   log
 
-  load 1
+  load 0
+
+  byte 0x05bc54586d732c5ad56b845054da1854a3db5f25aac3d2809f0f0d1ca217d0c21907ef0b652fbd125ce4be4d63f35942a31fc5fe2f6074d359d6673bc9ca2f610e801f89bdb9e12cb03afac9950becb11123619653081b184a6507fc7b099e732adc8de696f5d8469d300c6e8863e6d946768790d7a4df02e78b6edbd75ced2d2acdf61a72c0296e33b656718d23c1f927ef7096fdfed4dea0fcaafe5031e1290ed56d0b58c1882388c0f3f3514e875f49bd6965a09c22b3d68dc4305b4ac89716561820aeeeafde3080bec208bd7b7684437bafd392faa2bbc26c487fc76a291048874de61576e700e220c126aa738fe0aab92b3a6d17aa36f27117eec743cd04255c4ae49e164857afa78611e8383a05d7f59d05192ef4bb0a2ff25bbd6bae0363dca49a1d5eb2752832baa45edaca1afd6f6651a87e42b363a9f5747e869f1dc4927a76ae95801fd674b9895adcb5ba710153a310cd69cf5cf7d08b49c33b14d5146d3f00f2aab6153447197341f835de364615597cc610ef3c681cbe8e302aa9423c17f5f5d18c4ff86803d9e2198b9fba8740662cdd70beacced2d6061c2cd6aab6668dab5475a436e77e166814adefc6db5e6434fa9334dcb33f4b9c9f0e5badec1f7cbc94062ee439c2989445e7df8734b3623fd19d22e96c2ba54a640bbc672e95c318744fe105315a413d759f5466be6c0866e0988f9a3b4ed72b020d0c8ffe1802301d5527e9e373deea8beaf10bca39e58d666238e97fb641b9831ee9e43c6080696d338a518643c6997a23db4ad6992248e9eb2a570e1a08718309aeadb16d0cffa6bb77c01496ac88e4834616957d174d303548b75a61b2d5cb277871333786b8104dca3f12ba729014dbffd333ad6abeb41e7ab49f3ad9ca7a
+
+  extract 128 64
+
+  txna ApplicationArgs 1
+
+  extract 4 4
+
+  bn256_add
+
+  bn256_add
+
+  store 0
+
+  load 0
+
+  log
+
+  load 0
+
+  byte 0x05bc54586d732c5ad56b845054da1854a3db5f25aac3d2809f0f0d1ca217d0c21907ef0b652fbd125ce4be4d63f35942a31fc5fe2f6074d359d6673bc9ca2f610e801f89bdb9e12cb03afac9950becb11123619653081b184a6507fc7b099e732adc8de696f5d8469d300c6e8863e6d946768790d7a4df02e78b6edbd75ced2d2acdf61a72c0296e33b656718d23c1f927ef7096fdfed4dea0fcaafe5031e1290ed56d0b58c1882388c0f3f3514e875f49bd6965a09c22b3d68dc4305b4ac89716561820aeeeafde3080bec208bd7b7684437bafd392faa2bbc26c487fc76a291048874de61576e700e220c126aa738fe0aab92b3a6d17aa36f27117eec743cd04255c4ae49e164857afa78611e8383a05d7f59d05192ef4bb0a2ff25bbd6bae0363dca49a1d5eb2752832baa45edaca1afd6f6651a87e42b363a9f5747e869f1dc4927a76ae95801fd674b9895adcb5ba710153a310cd69cf5cf7d08b49c33b14d5146d3f00f2aab6153447197341f835de364615597cc610ef3c681cbe8e302aa9423c17f5f5d18c4ff86803d9e2198b9fba8740662cdd70beacced2d6061c2cd6aab6668dab5475a436e77e166814adefc6db5e6434fa9334dcb33f4b9c9f0e5badec1f7cbc94062ee439c2989445e7df8734b3623fd19d22e96c2ba54a640bbc672e95c318744fe105315a413d759f5466be6c0866e0988f9a3b4ed72b020d0c8ffe1802301d5527e9e373deea8beaf10bca39e58d666238e97fb641b9831ee9e43c6080696d338a518643c6997a23db4ad6992248e9eb2a570e1a08718309aeadb16d0cffa6bb77c01496ac88e4834616957d174d303548b75a61b2d5cb277871333786b8104dca3f12ba729014dbffd333ad6abeb41e7ab49f3ad9ca7a
+
+  extract 192 64
+
+  txna ApplicationArgs 1
+
+  extract 8 4
+
+  bn256_add
+
+  bn256_add
+
+  store 0
+
+  load 0
+
+  log
+
+  load 0
+
+  byte 0x05bc54586d732c5ad56b845054da1854a3db5f25aac3d2809f0f0d1ca217d0c21907ef0b652fbd125ce4be4d63f35942a31fc5fe2f6074d359d6673bc9ca2f610e801f89bdb9e12cb03afac9950becb11123619653081b184a6507fc7b099e732adc8de696f5d8469d300c6e8863e6d946768790d7a4df02e78b6edbd75ced2d2acdf61a72c0296e33b656718d23c1f927ef7096fdfed4dea0fcaafe5031e1290ed56d0b58c1882388c0f3f3514e875f49bd6965a09c22b3d68dc4305b4ac89716561820aeeeafde3080bec208bd7b7684437bafd392faa2bbc26c487fc76a291048874de61576e700e220c126aa738fe0aab92b3a6d17aa36f27117eec743cd04255c4ae49e164857afa78611e8383a05d7f59d05192ef4bb0a2ff25bbd6bae0363dca49a1d5eb2752832baa45edaca1afd6f6651a87e42b363a9f5747e869f1dc4927a76ae95801fd674b9895adcb5ba710153a310cd69cf5cf7d08b49c33b14d5146d3f00f2aab6153447197341f835de364615597cc610ef3c681cbe8e302aa9423c17f5f5d18c4ff86803d9e2198b9fba8740662cdd70beacced2d6061c2cd6aab6668dab5475a436e77e166814adefc6db5e6434fa9334dcb33f4b9c9f0e5badec1f7cbc94062ee439c2989445e7df8734b3623fd19d22e96c2ba54a640bbc672e95c318744fe105315a413d759f5466be6c0866e0988f9a3b4ed72b020d0c8ffe1802301d5527e9e373deea8beaf10bca39e58d666238e97fb641b9831ee9e43c6080696d338a518643c6997a23db4ad6992248e9eb2a570e1a08718309aeadb16d0cffa6bb77c01496ac88e4834616957d174d303548b75a61b2d5cb277871333786b8104dca3f12ba729014dbffd333ad6abeb41e7ab49f3ad9ca7a
+
+  int 256
+
+  int 64
+
+  extract3
+
+  txna ApplicationArgs 1
+
+  extract 12 4
+
+  bn256_add
+
+  bn256_add
+
+  store 0
+
+  load 0
+
+  log
+
+  load 0
+
+  byte 0x05bc54586d732c5ad56b845054da1854a3db5f25aac3d2809f0f0d1ca217d0c21907ef0b652fbd125ce4be4d63f35942a31fc5fe2f6074d359d6673bc9ca2f610e801f89bdb9e12cb03afac9950becb11123619653081b184a6507fc7b099e732adc8de696f5d8469d300c6e8863e6d946768790d7a4df02e78b6edbd75ced2d2acdf61a72c0296e33b656718d23c1f927ef7096fdfed4dea0fcaafe5031e1290ed56d0b58c1882388c0f3f3514e875f49bd6965a09c22b3d68dc4305b4ac89716561820aeeeafde3080bec208bd7b7684437bafd392faa2bbc26c487fc76a291048874de61576e700e220c126aa738fe0aab92b3a6d17aa36f27117eec743cd04255c4ae49e164857afa78611e8383a05d7f59d05192ef4bb0a2ff25bbd6bae0363dca49a1d5eb2752832baa45edaca1afd6f6651a87e42b363a9f5747e869f1dc4927a76ae95801fd674b9895adcb5ba710153a310cd69cf5cf7d08b49c33b14d5146d3f00f2aab6153447197341f835de364615597cc610ef3c681cbe8e302aa9423c17f5f5d18c4ff86803d9e2198b9fba8740662cdd70beacced2d6061c2cd6aab6668dab5475a436e77e166814adefc6db5e6434fa9334dcb33f4b9c9f0e5badec1f7cbc94062ee439c2989445e7df8734b3623fd19d22e96c2ba54a640bbc672e95c318744fe105315a413d759f5466be6c0866e0988f9a3b4ed72b020d0c8ffe1802301d5527e9e373deea8beaf10bca39e58d666238e97fb641b9831ee9e43c6080696d338a518643c6997a23db4ad6992248e9eb2a570e1a08718309aeadb16d0cffa6bb77c01496ac88e4834616957d174d303548b75a61b2d5cb277871333786b8104dca3f12ba729014dbffd333ad6abeb41e7ab49f3ad9ca7a
+
+  int 320
+
+  int 64
+
+  extract3
+
+  txna ApplicationArgs 1
+
+  extract 16 4
+
+  bn256_add
+
+  bn256_add
+
+  store 0
+
+  load 0
+
+  log
+
+  load 0
+
+  byte 0x05bc54586d732c5ad56b845054da1854a3db5f25aac3d2809f0f0d1ca217d0c21907ef0b652fbd125ce4be4d63f35942a31fc5fe2f6074d359d6673bc9ca2f610e801f89bdb9e12cb03afac9950becb11123619653081b184a6507fc7b099e732adc8de696f5d8469d300c6e8863e6d946768790d7a4df02e78b6edbd75ced2d2acdf61a72c0296e33b656718d23c1f927ef7096fdfed4dea0fcaafe5031e1290ed56d0b58c1882388c0f3f3514e875f49bd6965a09c22b3d68dc4305b4ac89716561820aeeeafde3080bec208bd7b7684437bafd392faa2bbc26c487fc76a291048874de61576e700e220c126aa738fe0aab92b3a6d17aa36f27117eec743cd04255c4ae49e164857afa78611e8383a05d7f59d05192ef4bb0a2ff25bbd6bae0363dca49a1d5eb2752832baa45edaca1afd6f6651a87e42b363a9f5747e869f1dc4927a76ae95801fd674b9895adcb5ba710153a310cd69cf5cf7d08b49c33b14d5146d3f00f2aab6153447197341f835de364615597cc610ef3c681cbe8e302aa9423c17f5f5d18c4ff86803d9e2198b9fba8740662cdd70beacced2d6061c2cd6aab6668dab5475a436e77e166814adefc6db5e6434fa9334dcb33f4b9c9f0e5badec1f7cbc94062ee439c2989445e7df8734b3623fd19d22e96c2ba54a640bbc672e95c318744fe105315a413d759f5466be6c0866e0988f9a3b4ed72b020d0c8ffe1802301d5527e9e373deea8beaf10bca39e58d666238e97fb641b9831ee9e43c6080696d338a518643c6997a23db4ad6992248e9eb2a570e1a08718309aeadb16d0cffa6bb77c01496ac88e4834616957d174d303548b75a61b2d5cb277871333786b8104dca3f12ba729014dbffd333ad6abeb41e7ab49f3ad9ca7a
+
+  int 384
+
+  int 64
+
+  extract3
+
+  txna ApplicationArgs 1
+
+  extract 20 4
+
+  bn256_add
+
+  bn256_add
+
+  store 0
+
+  load 0
+
+  log
+
+  load 0
+
+  byte 0x05bc54586d732c5ad56b845054da1854a3db5f25aac3d2809f0f0d1ca217d0c21907ef0b652fbd125ce4be4d63f35942a31fc5fe2f6074d359d6673bc9ca2f610e801f89bdb9e12cb03afac9950becb11123619653081b184a6507fc7b099e732adc8de696f5d8469d300c6e8863e6d946768790d7a4df02e78b6edbd75ced2d2acdf61a72c0296e33b656718d23c1f927ef7096fdfed4dea0fcaafe5031e1290ed56d0b58c1882388c0f3f3514e875f49bd6965a09c22b3d68dc4305b4ac89716561820aeeeafde3080bec208bd7b7684437bafd392faa2bbc26c487fc76a291048874de61576e700e220c126aa738fe0aab92b3a6d17aa36f27117eec743cd04255c4ae49e164857afa78611e8383a05d7f59d05192ef4bb0a2ff25bbd6bae0363dca49a1d5eb2752832baa45edaca1afd6f6651a87e42b363a9f5747e869f1dc4927a76ae95801fd674b9895adcb5ba710153a310cd69cf5cf7d08b49c33b14d5146d3f00f2aab6153447197341f835de364615597cc610ef3c681cbe8e302aa9423c17f5f5d18c4ff86803d9e2198b9fba8740662cdd70beacced2d6061c2cd6aab6668dab5475a436e77e166814adefc6db5e6434fa9334dcb33f4b9c9f0e5badec1f7cbc94062ee439c2989445e7df8734b3623fd19d22e96c2ba54a640bbc672e95c318744fe105315a413d759f5466be6c0866e0988f9a3b4ed72b020d0c8ffe1802301d5527e9e373deea8beaf10bca39e58d666238e97fb641b9831ee9e43c6080696d338a518643c6997a23db4ad6992248e9eb2a570e1a08718309aeadb16d0cffa6bb77c01496ac88e4834616957d174d303548b75a61b2d5cb277871333786b8104dca3f12ba729014dbffd333ad6abeb41e7ab49f3ad9ca7a
+
+  int 448
+
+  int 64
+
+  extract3
+
+  txna ApplicationArgs 1
+
+  extract 24 4
+
+  bn256_add
+
+  bn256_add
+
+  store 0
+
+  load 0
+
+  log
+
+  load 0
+
+  byte 0x05bc54586d732c5ad56b845054da1854a3db5f25aac3d2809f0f0d1ca217d0c21907ef0b652fbd125ce4be4d63f35942a31fc5fe2f6074d359d6673bc9ca2f610e801f89bdb9e12cb03afac9950becb11123619653081b184a6507fc7b099e732adc8de696f5d8469d300c6e8863e6d946768790d7a4df02e78b6edbd75ced2d2acdf61a72c0296e33b656718d23c1f927ef7096fdfed4dea0fcaafe5031e1290ed56d0b58c1882388c0f3f3514e875f49bd6965a09c22b3d68dc4305b4ac89716561820aeeeafde3080bec208bd7b7684437bafd392faa2bbc26c487fc76a291048874de61576e700e220c126aa738fe0aab92b3a6d17aa36f27117eec743cd04255c4ae49e164857afa78611e8383a05d7f59d05192ef4bb0a2ff25bbd6bae0363dca49a1d5eb2752832baa45edaca1afd6f6651a87e42b363a9f5747e869f1dc4927a76ae95801fd674b9895adcb5ba710153a310cd69cf5cf7d08b49c33b14d5146d3f00f2aab6153447197341f835de364615597cc610ef3c681cbe8e302aa9423c17f5f5d18c4ff86803d9e2198b9fba8740662cdd70beacced2d6061c2cd6aab6668dab5475a436e77e166814adefc6db5e6434fa9334dcb33f4b9c9f0e5badec1f7cbc94062ee439c2989445e7df8734b3623fd19d22e96c2ba54a640bbc672e95c318744fe105315a413d759f5466be6c0866e0988f9a3b4ed72b020d0c8ffe1802301d5527e9e373deea8beaf10bca39e58d666238e97fb641b9831ee9e43c6080696d338a518643c6997a23db4ad6992248e9eb2a570e1a08718309aeadb16d0cffa6bb77c01496ac88e4834616957d174d303548b75a61b2d5cb277871333786b8104dca3f12ba729014dbffd333ad6abeb41e7ab49f3ad9ca7a
+
+  int 512
+
+  int 64
+
+  extract3
+
+  txna ApplicationArgs 1
+
+  extract 28 4
+
+  bn256_add
+
+  bn256_add
+
+  store 0
+
+  load 0
+
+  log
+
+  load 0
+
+  byte 0x05bc54586d732c5ad56b845054da1854a3db5f25aac3d2809f0f0d1ca217d0c21907ef0b652fbd125ce4be4d63f35942a31fc5fe2f6074d359d6673bc9ca2f610e801f89bdb9e12cb03afac9950becb11123619653081b184a6507fc7b099e732adc8de696f5d8469d300c6e8863e6d946768790d7a4df02e78b6edbd75ced2d2acdf61a72c0296e33b656718d23c1f927ef7096fdfed4dea0fcaafe5031e1290ed56d0b58c1882388c0f3f3514e875f49bd6965a09c22b3d68dc4305b4ac89716561820aeeeafde3080bec208bd7b7684437bafd392faa2bbc26c487fc76a291048874de61576e700e220c126aa738fe0aab92b3a6d17aa36f27117eec743cd04255c4ae49e164857afa78611e8383a05d7f59d05192ef4bb0a2ff25bbd6bae0363dca49a1d5eb2752832baa45edaca1afd6f6651a87e42b363a9f5747e869f1dc4927a76ae95801fd674b9895adcb5ba710153a310cd69cf5cf7d08b49c33b14d5146d3f00f2aab6153447197341f835de364615597cc610ef3c681cbe8e302aa9423c17f5f5d18c4ff86803d9e2198b9fba8740662cdd70beacced2d6061c2cd6aab6668dab5475a436e77e166814adefc6db5e6434fa9334dcb33f4b9c9f0e5badec1f7cbc94062ee439c2989445e7df8734b3623fd19d22e96c2ba54a640bbc672e95c318744fe105315a413d759f5466be6c0866e0988f9a3b4ed72b020d0c8ffe1802301d5527e9e373deea8beaf10bca39e58d666238e97fb641b9831ee9e43c6080696d338a518643c6997a23db4ad6992248e9eb2a570e1a08718309aeadb16d0cffa6bb77c01496ac88e4834616957d174d303548b75a61b2d5cb277871333786b8104dca3f12ba729014dbffd333ad6abeb41e7ab49f3ad9ca7a
+
+  int 576
+
+  int 64
+
+  extract3
+
+  txna ApplicationArgs 1
+
+  extract 32 4
+
+  bn256_add
+
+  bn256_add
+
+  store 0
+
+  load 0
+
+  log
+
+  load 0
+
+  byte 0x05bc54586d732c5ad56b845054da1854a3db5f25aac3d2809f0f0d1ca217d0c21907ef0b652fbd125ce4be4d63f35942a31fc5fe2f6074d359d6673bc9ca2f610e801f89bdb9e12cb03afac9950becb11123619653081b184a6507fc7b099e732adc8de696f5d8469d300c6e8863e6d946768790d7a4df02e78b6edbd75ced2d2acdf61a72c0296e33b656718d23c1f927ef7096fdfed4dea0fcaafe5031e1290ed56d0b58c1882388c0f3f3514e875f49bd6965a09c22b3d68dc4305b4ac89716561820aeeeafde3080bec208bd7b7684437bafd392faa2bbc26c487fc76a291048874de61576e700e220c126aa738fe0aab92b3a6d17aa36f27117eec743cd04255c4ae49e164857afa78611e8383a05d7f59d05192ef4bb0a2ff25bbd6bae0363dca49a1d5eb2752832baa45edaca1afd6f6651a87e42b363a9f5747e869f1dc4927a76ae95801fd674b9895adcb5ba710153a310cd69cf5cf7d08b49c33b14d5146d3f00f2aab6153447197341f835de364615597cc610ef3c681cbe8e302aa9423c17f5f5d18c4ff86803d9e2198b9fba8740662cdd70beacced2d6061c2cd6aab6668dab5475a436e77e166814adefc6db5e6434fa9334dcb33f4b9c9f0e5badec1f7cbc94062ee439c2989445e7df8734b3623fd19d22e96c2ba54a640bbc672e95c318744fe105315a413d759f5466be6c0866e0988f9a3b4ed72b020d0c8ffe1802301d5527e9e373deea8beaf10bca39e58d666238e97fb641b9831ee9e43c6080696d338a518643c6997a23db4ad6992248e9eb2a570e1a08718309aeadb16d0cffa6bb77c01496ac88e4834616957d174d303548b75a61b2d5cb277871333786b8104dca3f12ba729014dbffd333ad6abeb41e7ab49f3ad9ca7a
+
+  extract 0 64
+
+  bn256_add
+
+  store 0
 
   int 1
 
-  +
+  return
 
-  store 1
+  main_l11:
 
-  b main_l11
+  int 1
+
+  return
+
+  main_l12:
+
+  global CreatorAddress
+
+  txn Sender
+
+  ==
+
+  return
+
+  main_l13:
+
+  global CreatorAddress
+
+  txn Sender
+
+  ==
+
+  return
 
   main_l14:
 
@@ -382,37 +1350,11 @@ tealCode: >
 
   main_l15:
 
-  global CreatorAddress
-
-  txn Sender
-
-  ==
+  int 1
 
   return
 
   main_l16:
-
-  global CreatorAddress
-
-  txn Sender
-
-  ==
-
-  return
-
-  main_l17:
-
-  int 1
-
-  return
-
-  main_l18:
-
-  int 1
-
-  return
-
-  main_l19:
 
   int 1
 

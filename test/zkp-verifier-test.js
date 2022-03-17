@@ -6,7 +6,7 @@ const fs = require('fs')
 
 let appID;
 
-describe("bn128 py contract", function () {
+describe("zkp verifier contract", function () {
   const fee = 1000;
   const minBalance = BigInt(1e6);
   const john = new AccountStore(minBalance + BigInt(fee));
@@ -38,7 +38,7 @@ describe("bn128 py contract", function () {
     appID: 0,
     payFlags: { totalFee: fee },
     // appArgs: ["str:upload", new Uint8Array(fs.readFileSync('assets/tls_primary_in'))]
-    appArgs: ['str:verify']
+    appArgs: ['str:verify', new Uint8Array(Buffer.from('00000001cdbb6b0c2e65cf2a4d4f2f0873f006232325e680a91af29cb1a45ba025a82b55', 'hex'))]
   };
 
   const txEmpty = {
