@@ -14,7 +14,7 @@ async function run (runtimeEnv, deployer) {
     sign: types.SignType.SecretKey,
     fromAccount: master,
     // fromAccountAddr: master.addr,
-    appID: 32,
+    appID: 5,
     payFlags: { totalFee: fee },
     appArgs: ['str:verify', 
     // new Uint8Array(Buffer.from('29536a49ce78f60237850de716a56f7b93b669f629771a7d1f374fa192f1917f150f2ea07470bfe694b1c1bb65bf4fd88c3f4b026b17c87677999748c8e664c216e9bf0d75150d58e2b3d02b5df1dd3c63dc14528a2f4b8e5c1a41d3ecab01df0b66c674784048dd73c7c307ad224e778d13a7bc11591e8418e63c58881f5542', 'hex')),
@@ -28,26 +28,27 @@ async function run (runtimeEnv, deployer) {
               new Uint8Array(Buffer.from('01f5ae49470f2339ba2e73d7e7888fa1b1608ea811b9f31123158167f9137d5710e0a8d01c768868b2175903fe36449ace8d36b5e3fff682cdaa0a6c6aab4a83', 'hex'))]
   };
 
-  const txEmpty = {
-    type: types.TransactionType.CallApp,
-    sign: types.SignType.SecretKey,
-    fromAccount: master,
-    // fromAccountAddr: master.addr,
-    appID: 9,
-    payFlags: { totalFee: fee },
-    appArgs: [],
+  function emptyTx(appId, i) {
+    return {
+      type: types.TransactionType.CallApp,
+      sign: types.SignType.SecretKey,
+      fromAccount: master,
+      // fromAccountAddr: master.addr,
+      appID: appId,
+      payFlags: { totalFee: fee },
+      appArgs: [`str:${i}`],
+    }
   }
 
   function groupTx(txParams) {
-    txEmpty.appID = txParams.appID
     let ret = [txParams]
     for (i = 0; i < 15; i++) {
-      ret.push(txEmpty)
+      ret.push(emptyTx(txParams.appID, i))
     }
     return ret
   }
 
-  let res = await executeTransaction(deployer, txParams);
+  let res = await executeTransaction(deployer, groupTx(txParams));
   console.log(res)
 }
 
