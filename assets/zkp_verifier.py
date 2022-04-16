@@ -30,9 +30,7 @@ def zkp_verifier_program(VK_ALPHA, VK_BETA, VK_DELTA, VK_GAMMA, VK_IC, INPUT_LEN
         inpi = Substring(inp, Int(i*4), Int((i+1)*4))
         ak = BN256ScalarMul(icip1, inpi)
         return [
-            # Log(ak),
             vk_x.store(BN256Add(vk_x.load(), ak)),
-            # Log(vk_x.load()),
         ]
 
     def vk_x_loop(inp):
@@ -45,16 +43,29 @@ def zkp_verifier_program(VK_ALPHA, VK_BETA, VK_DELTA, VK_GAMMA, VK_IC, INPUT_LEN
     C = Txn.application_args[4]
     Q = Concat(B, vk_beta, vk_gamma, vk_delta)
     
-    verify = Seq(
+    verify1 = Seq(
         [
             vk_x.store(Bytes('base16', '00'* 64)),
             *vk_x_loop(inp),
             vk_x.store(BN256Add(vk_x.load(), ic0)),
-            P.store(Concat(negA, vk_alpha, vk_x.load(), C)),
-            # result.store(BN256Pairing(P.load(), Q)),
-        
-            # Assert(result.load() == Int(1)),
+            App.localPut(Txn.sender(), Bytes('input'), inp),
+            App.localPut(Txn.sender(), Bytes('vk_x'), vk_x.load()),
             Return(Int(1)),
+        ]
+    )
+
+    inpLoaded = ScratchVar(TealType.bytes)
+    QLoaded = ScratchVar(TealType.bytes)
+    verify2 = Seq(
+        [
+            inpLoaded.store(App.localGet(Txn.sender(), Bytes('input'))),
+            vk_x.store(App.localGet(Txn.sender(), Bytes('vk_x'))),
+            P.store(Concat(negA, vk_alpha, vk_x.load(), C)),
+            App.localDel(Txn.sender(), Bytes('vk_x')),
+            App.localDel(Txn.sender(), Bytes('input')),
+            Assert(inpLoaded.load() == inp),
+            result.store(BN256Pairing(P.load(), Q)),
+            Return(result.load()),
         ]
     )
 
@@ -65,10 +76,15 @@ def zkp_verifier_program(VK_ALPHA, VK_BETA, VK_DELTA, VK_GAMMA, VK_IC, INPUT_LEN
         ],
         [
             And(
-                # Global.group_size() == Int(16),
-                Txn.application_args[0] == Bytes("verify"),
+                Txn.application_args[0] == Bytes("verify1"),
             ),
-            verify,
+            verify1,
+        ],
+        [
+            And(
+                Txn.application_args[0] == Bytes("verify2"),
+            ),
+            verify2,
         ],
         [
             Global.group_size() == Int(16),

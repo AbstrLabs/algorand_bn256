@@ -13,7 +13,7 @@ async function run (runtimeEnv, deployer) {
       sender: master,
       globalBytes: 0,
       globalInts: 0,
-      localBytes: 0,
+      localBytes: 3,
       localInts: 0,
     },
     {}

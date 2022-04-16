@@ -1,8 +1,8 @@
 filename: zkp_verifier.py
-timestamp: 1650029622
-compiled: ByADAUAAJgGABQW8VFhtcyxa1WuEUFTaGFSj218lqsPSgJ8PDRyiF9DCGQfvC2UvvRJc5L5NY/NZQqMfxf4vYHTTWdZnO8nKL2EOgB+JvbnhLLA6+smVC+yxESNhllMIGxhKZQf8ewmecyrcjeaW9dhGnTAMbohj5tlGdoeQ16TfAueLbtvXXO0tKs32GnLAKW4ztlZxjSPB+SfvcJb9/tTeoPyq/lAx4SkO1W0LWMGII4jA8/NRTodfSb1pZaCcIrPWjcQwW0rIlxZWGCCu7q/eMIC+wgi9e3aEQ3uv05L6orvCbEh/x2opEEiHTeYVducA4iDBJqpzj+CquSs6bReqNvJxF+7HQ80EJVxK5J4WSFevp4YR6Dg6Bdf1nQUZLvS7Ci/yW71rrgNj3KSaHV6ydSgyuqRe2soa/W9mUah+QrNjqfV0foafHcSSenaulYAf1nS5iVrctbpxAVOjEM1pz1z30ItJwzsU1RRtPwDyqrYVNEcZc0H4Nd42RhVZfMYQ7zxoHL6OMCqpQjwX9fXRjE/4aAPZ4hmLn7qHQGYs3XC+rM7S1gYcLNaqtmaNq1R1pDbnfhZoFK3vxtteZDT6kzTcsz9LnJ8OW63sH3y8lAYu5DnCmJRF59+HNLNiP9GdIulsK6VKZAu8Zy6Vwxh0T+EFMVpBPXWfVGa+bAhm4JiPmjtO1ysCDQyP/hgCMB1VJ+njc97qi+rxC8o55Y1mYjjpf7ZBuYMe6eQ8YIBpbTOKUYZDxpl6I9tK1pkiSOnrKlcOGghxgwmurbFtDP+mu3fAFJasiOSDRhaVfRdNMDVIt1phstXLJ3hxMzeGuBBNyj8SunKQFNv/0zOtar60Hnq0nzrZynoxGCQSQAGUMRkiEkABizEZgQISQAGBMRmBBBJAAXMxGYEFEkABZTEZJBJAAAEAMRskEkABVDYaAIAGdmVyaWZ5EkAACzIEgRASQAABACJDgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANQA0AChXQEA2GgFXAASamTUANAAoV4BANhoBVwQEmpk1ADQAKFfAQDYaAVcIBJqZNQA0ACiBgAIjWDYaAVcMBJqZNQA0ACiBwAIjWDYaAVcQBJqZNQA0ACiBgAMjWDYaAVcUBJqZNQA0ACiBwAMjWDYaAVcYBJqZNQA0ACiBgAQjWDYaAVccBJqZNQA0ACiBwAQjWDYaAVcgBJqZNQA0AChXAECZNQA2GgKAQBjvDE7ICNjf378xaYch7TOobM10MSDvOkwtTsROUJ1BLqQc0WTBpnC8qy+kOPYBf72N/KRh5YddTslKjk+T411QNABQNhoEUDUBIkMiQzIJMQASQzIJMQASQyJDIkMiQw==
-compiledHash: P3MTKOUWFUUFMVGROQUNSM2GPEO4GNJIFCIMP6EPJ5KXJZC6CDIQQQX4UU
-srcHash: 1930879131
+timestamp: 1650077123
+compiled: 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
+compiledHash: URVEQ3FC57JDPSD4DMZPMBV4W46OEIAPLK3ZCFG5OJQJC2DRIWRHY5T5K4
+srcHash: 4248737873
 base64ToBytes:
   - 7
   - 32
@@ -11,7 +11,7 @@ base64ToBytes:
   - 64
   - 0
   - 38
-  - 1
+  - 3
   - 128
   - 5
   - 5
@@ -654,44 +654,55 @@ base64ToBytes:
   - 217
   - 202
   - 122
+  - 5
+  - 105
+  - 110
+  - 112
+  - 117
+  - 116
+  - 4
+  - 118
+  - 107
+  - 95
+  - 120
   - 49
   - 24
   - 36
   - 18
   - 64
-  - 1
-  - 148
+  - 3
+  - 100
   - 49
   - 25
   - 34
   - 18
   - 64
-  - 1
-  - 139
+  - 3
+  - 91
   - 49
   - 25
   - 129
   - 2
   - 18
   - 64
-  - 1
-  - 129
+  - 3
+  - 81
   - 49
   - 25
   - 129
   - 4
   - 18
   - 64
-  - 1
-  - 115
+  - 3
+  - 67
   - 49
   - 25
   - 129
   - 5
   - 18
   - 64
-  - 1
-  - 101
+  - 3
+  - 53
   - 49
   - 25
   - 36
@@ -705,19 +716,36 @@ base64ToBytes:
   - 36
   - 18
   - 64
-  - 1
-  - 84
+  - 3
+  - 36
   - 54
   - 26
   - 0
   - 128
-  - 6
+  - 7
   - 118
   - 101
   - 114
   - 105
   - 102
   - 121
+  - 49
+  - 18
+  - 64
+  - 2
+  - 28
+  - 54
+  - 26
+  - 0
+  - 128
+  - 7
+  - 118
+  - 101
+  - 114
+  - 105
+  - 102
+  - 121
+  - 50
   - 18
   - 64
   - 0
@@ -732,6 +760,519 @@ base64ToBytes:
   - 1
   - 0
   - 34
+  - 67
+  - 49
+  - 0
+  - 41
+  - 98
+  - 53
+  - 3
+  - 49
+  - 0
+  - 42
+  - 98
+  - 53
+  - 0
+  - 54
+  - 26
+  - 2
+  - 128
+  - 64
+  - 24
+  - 239
+  - 12
+  - 78
+  - 200
+  - 8
+  - 216
+  - 223
+  - 223
+  - 191
+  - 49
+  - 105
+  - 135
+  - 33
+  - 237
+  - 51
+  - 168
+  - 108
+  - 205
+  - 116
+  - 49
+  - 32
+  - 239
+  - 58
+  - 76
+  - 45
+  - 78
+  - 196
+  - 78
+  - 80
+  - 157
+  - 65
+  - 46
+  - 164
+  - 28
+  - 209
+  - 100
+  - 193
+  - 166
+  - 112
+  - 188
+  - 171
+  - 47
+  - 164
+  - 56
+  - 246
+  - 1
+  - 127
+  - 189
+  - 141
+  - 252
+  - 164
+  - 97
+  - 229
+  - 135
+  - 93
+  - 78
+  - 201
+  - 74
+  - 142
+  - 79
+  - 147
+  - 227
+  - 93
+  - 80
+  - 52
+  - 0
+  - 80
+  - 54
+  - 26
+  - 4
+  - 80
+  - 53
+  - 2
+  - 49
+  - 0
+  - 42
+  - 104
+  - 49
+  - 0
+  - 41
+  - 104
+  - 52
+  - 3
+  - 54
+  - 26
+  - 1
+  - 18
+  - 68
+  - 52
+  - 2
+  - 54
+  - 26
+  - 3
+  - 128
+  - 128
+  - 1
+  - 25
+  - 254
+  - 223
+  - 103
+  - 247
+  - 111
+  - 95
+  - 239
+  - 56
+  - 74
+  - 201
+  - 131
+  - 144
+  - 205
+  - 17
+  - 23
+  - 99
+  - 71
+  - 92
+  - 250
+  - 113
+  - 171
+  - 94
+  - 237
+  - 55
+  - 86
+  - 224
+  - 139
+  - 47
+  - 193
+  - 69
+  - 127
+  - 16
+  - 179
+  - 138
+  - 63
+  - 27
+  - 221
+  - 44
+  - 43
+  - 204
+  - 156
+  - 224
+  - 215
+  - 70
+  - 225
+  - 38
+  - 47
+  - 98
+  - 227
+  - 4
+  - 111
+  - 44
+  - 15
+  - 83
+  - 179
+  - 103
+  - 200
+  - 14
+  - 45
+  - 85
+  - 25
+  - 213
+  - 94
+  - 37
+  - 58
+  - 3
+  - 64
+  - 123
+  - 246
+  - 216
+  - 177
+  - 8
+  - 16
+  - 88
+  - 128
+  - 109
+  - 210
+  - 236
+  - 224
+  - 69
+  - 177
+  - 254
+  - 94
+  - 223
+  - 204
+  - 234
+  - 83
+  - 61
+  - 246
+  - 87
+  - 130
+  - 89
+  - 152
+  - 24
+  - 137
+  - 30
+  - 34
+  - 51
+  - 87
+  - 162
+  - 126
+  - 191
+  - 136
+  - 65
+  - 20
+  - 76
+  - 173
+  - 3
+  - 88
+  - 146
+  - 148
+  - 237
+  - 101
+  - 157
+  - 183
+  - 134
+  - 174
+  - 73
+  - 26
+  - 139
+  - 59
+  - 213
+  - 48
+  - 55
+  - 222
+  - 206
+  - 117
+  - 80
+  - 128
+  - 128
+  - 1
+  - 11
+  - 128
+  - 10
+  - 117
+  - 144
+  - 127
+  - 228
+  - 141
+  - 229
+  - 188
+  - 35
+  - 199
+  - 141
+  - 89
+  - 78
+  - 7
+  - 195
+  - 95
+  - 80
+  - 35
+  - 111
+  - 61
+  - 1
+  - 194
+  - 17
+  - 152
+  - 197
+  - 179
+  - 139
+  - 42
+  - 81
+  - 238
+  - 23
+  - 112
+  - 190
+  - 42
+  - 252
+  - 212
+  - 139
+  - 135
+  - 192
+  - 82
+  - 244
+  - 0
+  - 242
+  - 24
+  - 115
+  - 150
+  - 255
+  - 142
+  - 131
+  - 28
+  - 61
+  - 180
+  - 181
+  - 157
+  - 223
+  - 201
+  - 237
+  - 91
+  - 4
+  - 116
+  - 253
+  - 126
+  - 27
+  - 208
+  - 235
+  - 151
+  - 107
+  - 31
+  - 201
+  - 38
+  - 63
+  - 140
+  - 107
+  - 8
+  - 126
+  - 219
+  - 228
+  - 210
+  - 137
+  - 182
+  - 215
+  - 2
+  - 146
+  - 184
+  - 229
+  - 87
+  - 255
+  - 160
+  - 103
+  - 37
+  - 78
+  - 86
+  - 59
+  - 44
+  - 40
+  - 27
+  - 169
+  - 155
+  - 63
+  - 31
+  - 44
+  - 165
+  - 108
+  - 200
+  - 32
+  - 224
+  - 154
+  - 130
+  - 81
+  - 164
+  - 113
+  - 165
+  - 42
+  - 97
+  - 248
+  - 61
+  - 88
+  - 12
+  - 32
+  - 6
+  - 254
+  - 193
+  - 166
+  - 33
+  - 42
+  - 110
+  - 80
+  - 128
+  - 128
+  - 1
+  - 6
+  - 232
+  - 233
+  - 86
+  - 73
+  - 146
+  - 248
+  - 0
+  - 84
+  - 67
+  - 183
+  - 236
+  - 236
+  - 141
+  - 6
+  - 246
+  - 100
+  - 128
+  - 26
+  - 53
+  - 153
+  - 107
+  - 103
+  - 72
+  - 24
+  - 20
+  - 253
+  - 205
+  - 176
+  - 225
+  - 79
+  - 232
+  - 4
+  - 170
+  - 145
+  - 251
+  - 158
+  - 244
+  - 128
+  - 68
+  - 141
+  - 13
+  - 35
+  - 136
+  - 143
+  - 56
+  - 70
+  - 88
+  - 69
+  - 90
+  - 183
+  - 234
+  - 113
+  - 233
+  - 15
+  - 126
+  - 118
+  - 28
+  - 121
+  - 203
+  - 98
+  - 226
+  - 32
+  - 48
+  - 28
+  - 28
+  - 179
+  - 150
+  - 151
+  - 182
+  - 191
+  - 184
+  - 102
+  - 210
+  - 146
+  - 58
+  - 50
+  - 61
+  - 207
+  - 114
+  - 52
+  - 140
+  - 107
+  - 232
+  - 60
+  - 181
+  - 138
+  - 95
+  - 60
+  - 83
+  - 220
+  - 50
+  - 207
+  - 123
+  - 40
+  - 209
+  - 5
+  - 47
+  - 43
+  - 236
+  - 91
+  - 145
+  - 180
+  - 100
+  - 130
+  - 72
+  - 72
+  - 55
+  - 83
+  - 1
+  - 0
+  - 89
+  - 202
+  - 91
+  - 46
+  - 167
+  - 211
+  - 60
+  - 65
+  - 114
+  - 39
+  - 78
+  - 182
+  - 21
+  - 225
+  - 28
+  - 39
+  - 162
+  - 80
+  - 155
+  - 53
+  - 1
+  - 52
+  - 1
   - 67
   - 128
   - 64
@@ -966,85 +1507,19 @@ base64ToBytes:
   - 153
   - 53
   - 0
+  - 49
+  - 0
+  - 41
   - 54
   - 26
-  - 2
-  - 128
-  - 64
-  - 24
-  - 239
-  - 12
-  - 78
-  - 200
-  - 8
-  - 216
-  - 223
-  - 223
-  - 191
-  - 49
-  - 105
-  - 135
-  - 33
-  - 237
-  - 51
-  - 168
-  - 108
-  - 205
-  - 116
-  - 49
-  - 32
-  - 239
-  - 58
-  - 76
-  - 45
-  - 78
-  - 196
-  - 78
-  - 80
-  - 157
-  - 65
-  - 46
-  - 164
-  - 28
-  - 209
-  - 100
-  - 193
-  - 166
-  - 112
-  - 188
-  - 171
-  - 47
-  - 164
-  - 56
-  - 246
   - 1
-  - 127
-  - 189
-  - 141
-  - 252
-  - 164
-  - 97
-  - 229
-  - 135
-  - 93
-  - 78
-  - 201
-  - 74
-  - 142
-  - 79
-  - 147
-  - 227
-  - 93
-  - 80
+  - 102
+  - 49
+  - 0
+  - 42
   - 52
   - 0
-  - 80
-  - 54
-  - 26
-  - 4
-  - 80
-  - 53
-  - 1
+  - 102
   - 34
   - 67
   - 34
@@ -1072,7 +1547,7 @@ tealCode: >
 
   intcblock 1 64 0
 
-  bytecblock 0x05bc54586d732c5ad56b845054da1854a3db5f25aac3d2809f0f0d1ca217d0c21907ef0b652fbd125ce4be4d63f35942a31fc5fe2f6074d359d6673bc9ca2f610e801f89bdb9e12cb03afac9950becb11123619653081b184a6507fc7b099e732adc8de696f5d8469d300c6e8863e6d946768790d7a4df02e78b6edbd75ced2d2acdf61a72c0296e33b656718d23c1f927ef7096fdfed4dea0fcaafe5031e1290ed56d0b58c1882388c0f3f3514e875f49bd6965a09c22b3d68dc4305b4ac89716561820aeeeafde3080bec208bd7b7684437bafd392faa2bbc26c487fc76a291048874de61576e700e220c126aa738fe0aab92b3a6d17aa36f27117eec743cd04255c4ae49e164857afa78611e8383a05d7f59d05192ef4bb0a2ff25bbd6bae0363dca49a1d5eb2752832baa45edaca1afd6f6651a87e42b363a9f5747e869f1dc4927a76ae95801fd674b9895adcb5ba710153a310cd69cf5cf7d08b49c33b14d5146d3f00f2aab6153447197341f835de364615597cc610ef3c681cbe8e302aa9423c17f5f5d18c4ff86803d9e2198b9fba8740662cdd70beacced2d6061c2cd6aab6668dab5475a436e77e166814adefc6db5e6434fa9334dcb33f4b9c9f0e5badec1f7cbc94062ee439c2989445e7df8734b3623fd19d22e96c2ba54a640bbc672e95c318744fe105315a413d759f5466be6c0866e0988f9a3b4ed72b020d0c8ffe1802301d5527e9e373deea8beaf10bca39e58d666238e97fb641b9831ee9e43c6080696d338a518643c6997a23db4ad6992248e9eb2a570e1a08718309aeadb16d0cffa6bb77c01496ac88e4834616957d174d303548b75a61b2d5cb277871333786b8104dca3f12ba729014dbffd333ad6abeb41e7ab49f3ad9ca7a
+  bytecblock 0x05bc54586d732c5ad56b845054da1854a3db5f25aac3d2809f0f0d1ca217d0c21907ef0b652fbd125ce4be4d63f35942a31fc5fe2f6074d359d6673bc9ca2f610e801f89bdb9e12cb03afac9950becb11123619653081b184a6507fc7b099e732adc8de696f5d8469d300c6e8863e6d946768790d7a4df02e78b6edbd75ced2d2acdf61a72c0296e33b656718d23c1f927ef7096fdfed4dea0fcaafe5031e1290ed56d0b58c1882388c0f3f3514e875f49bd6965a09c22b3d68dc4305b4ac89716561820aeeeafde3080bec208bd7b7684437bafd392faa2bbc26c487fc76a291048874de61576e700e220c126aa738fe0aab92b3a6d17aa36f27117eec743cd04255c4ae49e164857afa78611e8383a05d7f59d05192ef4bb0a2ff25bbd6bae0363dca49a1d5eb2752832baa45edaca1afd6f6651a87e42b363a9f5747e869f1dc4927a76ae95801fd674b9895adcb5ba710153a310cd69cf5cf7d08b49c33b14d5146d3f00f2aab6153447197341f835de364615597cc610ef3c681cbe8e302aa9423c17f5f5d18c4ff86803d9e2198b9fba8740662cdd70beacced2d6061c2cd6aab6668dab5475a436e77e166814adefc6db5e6434fa9334dcb33f4b9c9f0e5badec1f7cbc94062ee439c2989445e7df8734b3623fd19d22e96c2ba54a640bbc672e95c318744fe105315a413d759f5466be6c0866e0988f9a3b4ed72b020d0c8ffe1802301d5527e9e373deea8beaf10bca39e58d666238e97fb641b9831ee9e43c6080696d338a518643c6997a23db4ad6992248e9eb2a570e1a08718309aeadb16d0cffa6bb77c01496ac88e4834616957d174d303548b75a61b2d5cb277871333786b8104dca3f12ba729014dbffd333ad6abeb41e7ab49f3ad9ca7a 0x696e707574 0x766b5f78
 
   txn ApplicationID
 
@@ -1080,7 +1555,7 @@ tealCode: >
 
   ==
 
-  bnz main_l18
+  bnz main_l20
 
   txn OnCompletion
 
@@ -1088,7 +1563,7 @@ tealCode: >
 
   ==
 
-  bnz main_l17
+  bnz main_l19
 
   txn OnCompletion
 
@@ -1096,7 +1571,7 @@ tealCode: >
 
   ==
 
-  bnz main_l16
+  bnz main_l18
 
   txn OnCompletion
 
@@ -1104,7 +1579,7 @@ tealCode: >
 
   ==
 
-  bnz main_l15
+  bnz main_l17
 
   txn OnCompletion
 
@@ -1112,7 +1587,7 @@ tealCode: >
 
   ==
 
-  bnz main_l14
+  bnz main_l16
 
   txn OnCompletion
 
@@ -1132,15 +1607,23 @@ tealCode: >
 
   ==
 
-  bnz main_l13
+  bnz main_l15
 
   txna ApplicationArgs 0
 
-  pushbytes 0x766572696679 // "verify"
+  pushbytes 0x76657269667931 // "verify1"
 
   ==
 
-  bnz main_l12
+  bnz main_l14
+
+  txna ApplicationArgs 0
+
+  pushbytes 0x76657269667932 // "verify2"
+
+  ==
+
+  bnz main_l13
 
   global GroupSize
 
@@ -1148,17 +1631,95 @@ tealCode: >
 
   ==
 
-  bnz main_l11
+  bnz main_l12
 
   err
 
-  main_l11:
+  main_l12:
 
   intc_0 // 1
 
   return
 
-  main_l12:
+  main_l13:
+
+  txn Sender
+
+  bytec_1 // "input"
+
+  app_local_get
+
+  store 3
+
+  txn Sender
+
+  bytec_2 // "vk_x"
+
+  app_local_get
+
+  store 0
+
+  txna ApplicationArgs 2
+
+  pushbytes 0x18ef0c4ec808d8dfdfbf31698721ed33a86ccd743120ef3a4c2d4ec44e509d412ea41cd164c1a670bcab2fa438f6017fbd8dfca461e5875d4ec94a8e4f93e35d // 0x18ef0c4ec808d8dfdfbf31698721ed33a86ccd743120ef3a4c2d4ec44e509d412ea41cd164c1a670bcab2fa438f6017fbd8dfca461e5875d4ec94a8e4f93e35d
+
+  concat
+
+  load 0
+
+  concat
+
+  txna ApplicationArgs 4
+
+  concat
+
+  store 2
+
+  txn Sender
+
+  bytec_2 // "vk_x"
+
+  app_local_del
+
+  txn Sender
+
+  bytec_1 // "input"
+
+  app_local_del
+
+  load 3
+
+  txna ApplicationArgs 1
+
+  ==
+
+  assert
+
+  load 2
+
+  txna ApplicationArgs 3
+
+  pushbytes 0x19fedf67f76f5fef384ac98390cd111763475cfa71ab5eed3756e08b2fc1457f10b38a3f1bdd2c2bcc9ce0d746e1262f62e3046f2c0f53b367c80e2d5519d55e253a03407bf6d8b1081058806dd2ece045b1fe5edfccea533df65782599818891e223357a27ebf8841144cad03589294ed659db786ae491a8b3bd53037dece75 // 0x19fedf67f76f5fef384ac98390cd111763475cfa71ab5eed3756e08b2fc1457f10b38a3f1bdd2c2bcc9ce0d746e1262f62e3046f2c0f53b367c80e2d5519d55e253a03407bf6d8b1081058806dd2ece045b1fe5edfccea533df65782599818891e223357a27ebf8841144cad03589294ed659db786ae491a8b3bd53037dece75
+
+  concat
+
+  pushbytes 0x0b800a75907fe48de5bc23c78d594e07c35f50236f3d01c21198c5b38b2a51ee1770be2afcd48b87c052f400f2187396ff8e831c3db4b59ddfc9ed5b0474fd7e1bd0eb976b1fc9263f8c6b087edbe4d289b6d70292b8e557ffa067254e563b2c281ba99b3f1f2ca56cc820e09a8251a471a52a61f83d580c2006fec1a6212a6e // 0x0b800a75907fe48de5bc23c78d594e07c35f50236f3d01c21198c5b38b2a51ee1770be2afcd48b87c052f400f2187396ff8e831c3db4b59ddfc9ed5b0474fd7e1bd0eb976b1fc9263f8c6b087edbe4d289b6d70292b8e557ffa067254e563b2c281ba99b3f1f2ca56cc820e09a8251a471a52a61f83d580c2006fec1a6212a6e
+
+  concat
+
+  pushbytes 0x06e8e9564992f8005443b7ecec8d06f664801a35996b67481814fdcdb0e14fe804aa91fb9ef480448d0d23888f384658455ab7ea71e90f7e761c79cb62e220301c1cb39697b6bfb866d2923a323dcf72348c6be83cb58a5f3c53dc32cf7b28d1052f2bec5b91b4648248483753010059ca5b2ea7d33c4172274eb615e11c27a2 // 0x06e8e9564992f8005443b7ecec8d06f664801a35996b67481814fdcdb0e14fe804aa91fb9ef480448d0d23888f384658455ab7ea71e90f7e761c79cb62e220301c1cb39697b6bfb866d2923a323dcf72348c6be83cb58a5f3c53dc32cf7b28d1052f2bec5b91b4648248483753010059ca5b2ea7d33c4172274eb615e11c27a2
+
+  concat
+
+  bn256_pairing
+
+  store 1
+
+  load 1
+
+  return
+
+  main_l14:
 
   pushbytes 0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 // 0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 
@@ -1342,44 +1903,34 @@ tealCode: >
 
   store 0
 
-  txna ApplicationArgs 2
+  txn Sender
 
-  pushbytes 0x18ef0c4ec808d8dfdfbf31698721ed33a86ccd743120ef3a4c2d4ec44e509d412ea41cd164c1a670bcab2fa438f6017fbd8dfca461e5875d4ec94a8e4f93e35d // 0x18ef0c4ec808d8dfdfbf31698721ed33a86ccd743120ef3a4c2d4ec44e509d412ea41cd164c1a670bcab2fa438f6017fbd8dfca461e5875d4ec94a8e4f93e35d
+  bytec_1 // "input"
 
-  concat
+  txna ApplicationArgs 1
 
-  load 0
-
-  concat
-
-  txna ApplicationArgs 4
-
-  concat
-
-  store 1
-
-  intc_0 // 1
-
-  return
-
-  main_l13:
-
-  intc_0 // 1
-
-  return
-
-  main_l14:
-
-  global CreatorAddress
+  app_local_put
 
   txn Sender
 
-  ==
+  bytec_2 // "vk_x"
+
+  load 0
+
+  app_local_put
+
+  intc_0 // 1
 
   return
 
   main_l15:
 
+  intc_0 // 1
+
+  return
+
+  main_l16:
+
   global CreatorAddress
 
   txn Sender
@@ -1388,19 +1939,29 @@ tealCode: >
 
   return
 
-  main_l16:
-
-  intc_0 // 1
-
-  return
-
   main_l17:
 
-  intc_0 // 1
+  global CreatorAddress
+
+  txn Sender
+
+  ==
 
   return
 
   main_l18:
+
+  intc_0 // 1
+
+  return
+
+  main_l19:
+
+  intc_0 // 1
+
+  return
+
+  main_l20:
 
   intc_0 // 1
 
