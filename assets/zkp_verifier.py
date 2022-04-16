@@ -1,13 +1,4 @@
-import sys
-sys.path.insert(0,'.')
-
-from algobpy.parse import parse_params
 from pyteal import *
-
-
-def flatten(t):
-    return [item for sublist in t for item in sublist]
-
 
 def zkp_verifier_program(VK_ALPHA, VK_BETA, VK_DELTA, VK_GAMMA, VK_IC, INPUT_LEN):
     handle_creation = Return(Int(1))
@@ -29,12 +20,10 @@ def zkp_verifier_program(VK_ALPHA, VK_BETA, VK_DELTA, VK_GAMMA, VK_IC, INPUT_LEN
         icip1 = Substring(vk_ic, Int((i+1)*64), Int((i+2)*64))
         inpi = Substring(inp, Int(i*4), Int((i+1)*4))
         ak = BN256ScalarMul(icip1, inpi)
-        return [
-            vk_x.store(BN256Add(vk_x.load(), ak)),
-        ]
+        return vk_x.store(BN256Add(vk_x.load(), ak))
 
     def vk_x_loop(inp):
-        return flatten([vk_x_single_step(i, inp) for i in range(INPUT_LEN)])
+        return [vk_x_single_step(i, inp) for i in range(INPUT_LEN)]
 
     ic0 = Substring(vk_ic, Int(0), Int(64))
     inp = Txn.application_args[1]
@@ -43,30 +32,31 @@ def zkp_verifier_program(VK_ALPHA, VK_BETA, VK_DELTA, VK_GAMMA, VK_IC, INPUT_LEN
     C = Txn.application_args[4]
     Q = Concat(B, vk_beta, vk_gamma, vk_delta)
     
+    # step 1: store input, vk_x calculated from input to local state
     verify1 = Seq(
-        [
-            vk_x.store(Bytes('base16', '00'* 64)),
-            *vk_x_loop(inp),
-            vk_x.store(BN256Add(vk_x.load(), ic0)),
-            App.localDel(Txn.sender(), Bytes('valid')),
-            App.localPut(Txn.sender(), Bytes('input'), inp),
-            App.localPut(Txn.sender(), Bytes('vk_x'), vk_x.load()),
-            Return(Int(1)),
-        ]
+        vk_x.store(Bytes('base16', '00'* 64)),
+        *vk_x_loop(inp),
+        vk_x.store(BN256Add(vk_x.load(), ic0)),
+        App.localDel(Txn.sender(), Bytes('valid')),
+        App.localPut(Txn.sender(), Bytes('input'), inp),
+        App.localPut(Txn.sender(), Bytes('vk_x'), vk_x.load()),
+        Return(Int(1)),
     )
 
     inpLoaded = ScratchVar(TealType.bytes)
-    QLoaded = ScratchVar(TealType.bytes)
+    # step 2: load vk_x, call bn256 pairing to verify the proof
     verify2 = Seq(
-        [
-            inpLoaded.store(App.localGet(Txn.sender(), Bytes('input'))),
-            vk_x.store(App.localGet(Txn.sender(), Bytes('vk_x'))),
-            P.store(Concat(negA, vk_alpha, vk_x.load(), C)),
-            Assert(inpLoaded.load() == inp),
-            result.store(BN256Pairing(P.load(), Q)),
-            App.localPut(Txn.sender(), Bytes('valid'), result.load()),
-            Return(result.load()),
-        ]
+        inpLoaded.store(App.localGet(Txn.sender(), Bytes('input'))),
+        vk_x.store(App.localGet(Txn.sender(), Bytes('vk_x'))),
+        P.store(Concat(negA, vk_alpha, vk_x.load(), C)),
+        Assert(inpLoaded.load() == inp),
+        result.store(BN256Pairing(P.load(), Q)),
+        App.localPut(Txn.sender(), Bytes('valid'), result.load()),
+        Return(result.load()),
+    )
+
+    # step 3: check timestamp, parse value from json
+    verify3 = Seq(
     )
 
     handle_no_op = Cond(
