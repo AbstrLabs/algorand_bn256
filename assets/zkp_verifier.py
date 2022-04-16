@@ -48,6 +48,7 @@ def zkp_verifier_program(VK_ALPHA, VK_BETA, VK_DELTA, VK_GAMMA, VK_IC, INPUT_LEN
             vk_x.store(Bytes('base16', '00'* 64)),
             *vk_x_loop(inp),
             vk_x.store(BN256Add(vk_x.load(), ic0)),
+            App.localDel(Txn.sender(), Bytes('valid')),
             App.localPut(Txn.sender(), Bytes('input'), inp),
             App.localPut(Txn.sender(), Bytes('vk_x'), vk_x.load()),
             Return(Int(1)),
@@ -61,34 +62,31 @@ def zkp_verifier_program(VK_ALPHA, VK_BETA, VK_DELTA, VK_GAMMA, VK_IC, INPUT_LEN
             inpLoaded.store(App.localGet(Txn.sender(), Bytes('input'))),
             vk_x.store(App.localGet(Txn.sender(), Bytes('vk_x'))),
             P.store(Concat(negA, vk_alpha, vk_x.load(), C)),
-            App.localDel(Txn.sender(), Bytes('vk_x')),
-            App.localDel(Txn.sender(), Bytes('input')),
             Assert(inpLoaded.load() == inp),
             result.store(BN256Pairing(P.load(), Q)),
+            App.localPut(Txn.sender(), Bytes('valid'), result.load()),
             Return(result.load()),
         ]
     )
 
     handle_no_op = Cond(
         [
-            Txn.application_args.length() == Int(0),
-            Return(Int(1)),
-        ],
-        [
             And(
+                Txn.group_index() == Int(0),
                 Txn.application_args[0] == Bytes("verify1"),
             ),
             verify1,
         ],
         [
             And(
+                Txn.group_index() == Int(0),
                 Txn.application_args[0] == Bytes("verify2"),
             ),
             verify2,
         ],
         [
-            Global.group_size() == Int(16),
-            Return(Int(1))
+            Txn.group_index() > Int(0),
+            Return(Int(1)),
         ]
     )
 

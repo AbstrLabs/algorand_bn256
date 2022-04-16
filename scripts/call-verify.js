@@ -8,7 +8,7 @@ async function run (runtimeEnv, deployer) {
 
   const fee = 1000;
 
-  const appID = 106;
+  const appID = 256;
 
   const optInParams = {
     type: types.TransactionType.OptInToApp,
@@ -66,11 +66,15 @@ async function run (runtimeEnv, deployer) {
     return ret
   }
 
-  let r = await executeTransaction(deployer, optInParams);
+  try {
+    await executeTransaction(deployer, optInParams);
+  } catch (e) {
+    console.log(e)
+  }
   let res = await executeTransaction(deployer, groupTx(txParams));
-  console.log(res)
+  console.log('verify1 done')
   let res2 = await executeTransaction(deployer, groupTx(txParams2));
-  console.log(res2)
+  console.log('verify2 done')
 }
 
 
