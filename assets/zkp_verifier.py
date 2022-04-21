@@ -37,6 +37,9 @@ def zkp_verifier_program(VK_ALPHA_HEX, VK_BETA_HEX, VK_DELTA_HEX, VK_GAMMA_HEX, 
         *vk_x_loop(input_),
         vk_x.store(BN256Add(vk_x.load(), IC_0)),
         App.localDel(Txn.sender(), Bytes('valid')),
+        App.localDel(Txn.sender(), Bytes('timestamp')),
+        App.localDel(Txn.sender(), Bytes('symbol')),
+        App.localDel(Txn.sender(), Bytes('price')),
         App.localPut(Txn.sender(), Bytes('input'), input_),
         App.localPut(Txn.sender(), Bytes('vk_x'), vk_x.load()),
         Return(Int(1)),
@@ -61,8 +64,23 @@ def zkp_verifier_program(VK_ALPHA_HEX, VK_BETA_HEX, VK_DELTA_HEX, VK_GAMMA_HEX, 
     # step 3: if the first arg is 'verify3'
     # check timestamp, parse value from json
     # following args are:
+    timestamp = Txn.application_args[1]
+    json_body = Txn.application_args[2]
+
+    is_valid = App.localGet(Txn.sender(), Bytes('valid'))
+    input_ = App.localGet(Txn.sender(), Bytes('input'))
+    time_content = Concat(timestamp, json_body)
+    hash = Sha256(time_content)
+    expected_hash = Substring(input_, Int(4), Int(36))
+    
     verify3 = Seq(
-        
+        If(And(is_valid, Eq(hash, expected_hash)),
+        Seq(
+            Pop(JsonRef(JsonType.JSONObject, json_body, Bytes("Global Quote"))),
+            Return(Int(1))
+        ),
+        Return(Int(0))
+        )
     )
 
     handle_no_op = Cond(
@@ -79,6 +97,13 @@ def zkp_verifier_program(VK_ALPHA_HEX, VK_BETA_HEX, VK_DELTA_HEX, VK_GAMMA_HEX, 
                 Txn.application_args[0] == Bytes("verify2"),
             ),
             verify2,
+        ],
+        [
+            And(
+                Txn.group_index() == Int(0),
+                Txn.application_args[0] == Bytes("verify3"),
+            ),
+            verify3,
         ],
         [
             Txn.group_index() > Int(0),

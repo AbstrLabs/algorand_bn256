@@ -8,7 +8,7 @@ async function run (runtimeEnv, deployer) {
 
   const fee = 1000;
 
-  const appID = 357;
+  const appID = 954;
 
   const optInParams = {
     type: types.TransactionType.OptInToApp,
@@ -42,6 +42,18 @@ async function run (runtimeEnv, deployer) {
     ]
   };
 
+  const txParams3 = {
+    type: types.TransactionType.CallApp,
+    sign: types.SignType.SecretKey,
+    fromAccount: master,
+    appID: appID,
+    payFlags: { totalFee: fee },
+    appArgs: ['str:verify3', 
+      new Uint8Array(Buffer.from('0000000061bf4e4e', 'hex')),
+      new Uint8Array(Buffer.from('7b0a2020202022476c6f62616c2051756f7465223a207b0a20202020202020202230312e2073796d626f6c223a202249424d222c0a20202020202020202230322e206f70656e223a20223132352e38373030222c0a20202020202020202230332e2068696768223a20223132382e36343030222c0a20202020202020202230342e206c6f77223a20223132352e32303933222c0a20202020202020202230352e207072696365223a20223132372e34303030222c0a20202020202020202230362e20766f6c756d65223a20223130333832363933222c0a20202020202020202230372e206c61746573742074726164696e6720646179223a2022323032312d31322d3137222c0a20202020202020202230382e2070726576696f757320636c6f7365223a20223132352e39333030222c0a20202020202020202230392e206368616e6765223a2022312e34373030222c0a20202020202020202231302e206368616e67652070657263656e74223a2022312e3136373325220a202020207d0a7d', 'hex')),
+    ]
+  };
+
   function emptyTx(appId, i) {
     return {
       type: types.TransactionType.CallApp,
@@ -71,6 +83,9 @@ async function run (runtimeEnv, deployer) {
   console.log('verify1 done')
   let res2 = await executeTransaction(deployer, groupTx(txParams2));
   console.log('verify2 done')
+  let res3 = await executeTransaction(deployer, groupTx(txParams3));
+  console.log('verify3 done')
+  console.log(res3)
 }
 
 
