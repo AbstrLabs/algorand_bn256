@@ -8,7 +8,7 @@ async function run (runtimeEnv, deployer) {
 
   const fee = 1000;
 
-  const appID = 954;
+  const appID = 1038;
 
   const optInParams = {
     type: types.TransactionType.OptInToApp,

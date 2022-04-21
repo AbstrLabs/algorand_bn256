@@ -17,6 +17,7 @@ def zkp_verifier_program(VK_ALPHA_HEX, VK_BETA_HEX, VK_DELTA_HEX, VK_GAMMA_HEX, 
     vk_x = ScratchVar(TealType.bytes)
     result = ScratchVar(TealType.uint64)
     point_P = ScratchVar(TealType.bytes)
+    global_quote = ScratchVar(TealType.bytes)
 
     def vk_x_single_step(i, input_):
         IC_i = Substring(VK_IC, Int((i+1)*64), Int((i+2)*64))
@@ -73,14 +74,15 @@ def zkp_verifier_program(VK_ALPHA_HEX, VK_BETA_HEX, VK_DELTA_HEX, VK_GAMMA_HEX, 
     hash = Sha256(time_content)
     expected_hash = Substring(input_, Int(4), Int(36))
     
-    verify3 = Seq(
-        If(And(is_valid, Eq(hash, expected_hash)),
+    verify3 = If(And(is_valid, Eq(hash, expected_hash)),
         Seq(
-            Pop(JsonRef(JsonType.JSONObject, json_body, Bytes("Global Quote"))),
+            global_quote.store(JsonRef(JsonType.JSONObject, json_body, Bytes("Global Quote"))),
+            App.localPut(Txn.sender(), Bytes('timestamp'), timestamp),
+            App.localPut(Txn.sender(), Bytes('symbol'), JsonRef(JsonType.JSONString, global_quote.load(), Bytes("01. symbol"))),
+            App.localPut(Txn.sender(), Bytes('price'), JsonRef(JsonType.JSONString, global_quote.load(), Bytes("05. price"))),
             Return(Int(1))
         ),
         Return(Int(0))
-        )
     )
 
     handle_no_op = Cond(
