@@ -22,4 +22,3 @@ async function run (runtimeEnv, deployer) {
 }
 
 module.exports = { default: run };
-  
