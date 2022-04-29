@@ -80,7 +80,8 @@ def zkp_verifier_program(VK_ALPHA_HEX, VK_BETA_HEX, VK_DELTA_HEX, VK_GAMMA_HEX, 
     expected_hash = Substring(input_, Int(4), Int(36))
     
     verify3 = If(And(is_valid, Eq(hash, expected_hash)),
-    # TODO: timestamp validity check
+    # timestamp validity check happens at the contract which use zkp_verifier contract, it determines the threshold whether the timestamp
+    # is still recent enough. This contract only validates the zkp proof, and produce determinstic result.
     # TODO: friendly error message
         Seq(
             global_quote.store(JsonRef(JsonType.JSONObject, json_body, Bytes("Global Quote"))),
