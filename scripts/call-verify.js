@@ -5,7 +5,6 @@ const fs = require('fs').promises
 async function run (runtimeEnv, deployer) {
 
   const master = deployer.accountsByName.get('master');
-  console.log(master.addr)
 
   const fee = 1000;
 
@@ -92,7 +91,9 @@ async function run (runtimeEnv, deployer) {
   try {
     await executeTransaction(deployer, optInParams);
   } catch (e) {
-    console.log(e)
+    if (!e.toString().includes('has already opted in')) {
+      console.log(e)
+    }
   }
   let res = await executeTransaction(deployer, groupTx(txParams));
   console.log('verify1 done')
