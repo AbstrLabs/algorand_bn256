@@ -88,6 +88,12 @@ def zkp_verifier_program(VK_ALPHA_HEX, VK_BETA_HEX, VK_DELTA_HEX, VK_GAMMA_HEX, 
             App.localPut(Txn.sender(), Bytes('timestamp'), timestamp),
             App.localPut(Txn.sender(), Bytes('symbol'), JsonRef(JsonType.JSONString, global_quote.load(), Bytes("01. symbol"))),
             App.localPut(Txn.sender(), Bytes('price'), JsonRef(JsonType.JSONString, global_quote.load(), Bytes("05. price"))),
+            Log(Bytes("timestamp:")),
+            Log(App.localGet(Txn.sender(), Bytes('timestamp'))),
+            Log(Bytes("symbol:")),
+            Log(App.localGet(Txn.sender(), Bytes('symbol'))),
+            Log(Bytes("price:")),
+            Log(App.localGet(Txn.sender(), Bytes('price'))),
             Return(Int(1))
         ),
         Return(Int(0))

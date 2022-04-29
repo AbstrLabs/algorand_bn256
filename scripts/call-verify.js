@@ -100,7 +100,13 @@ async function run (runtimeEnv, deployer) {
   console.log('verify2 done')
   let res3 = await executeTransaction(deployer, groupTx(txParams3));
   console.log('verify3 done')
-  console.log(res3)
+  console.log('logs:')
+  for(let i in res3.logs) {
+    console.log(res3.logs[i].toString(i == 1 ? 'hex' : 'utf-8'))
+    if (i == 1) {
+      console.log(' // ' + new Date(1000 * Number('0x' + res3.logs[i].toString('hex'))).toUTCString())
+    }
+  }
 }
 
 
