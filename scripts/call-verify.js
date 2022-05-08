@@ -8,9 +8,9 @@ async function run (runtimeEnv, deployer) {
 
   const fee = 1000;
 
-  let inputFile = process.env['ZKP_INPUT'] ? process.env['ZKP_INPUT'] : 'assets/primary.in.gnark'
-  let inputBeforeHashFile = process.env['ZKP_INPUT_BEFORE_HASH'] ? process.env['ZKP_INPUT_BEFORE_HASH'] : 'assets/before_hash.in'
-  let proofFile = process.env['ZKP_PROOF'] ? process.env['ZKP_PROOF'] : 'assets/proof.gnark'
+  let inputFile = process.env['ZKP_INPUT'] ?? 'assets/primary.in.gnark'
+  let inputBeforeHashFile = process.env['ZKP_INPUT_BEFORE_HASH'] ?? 'assets/before_hash.in'
+  let proofFile = process.env['ZKP_PROOF'] ?? 'assets/proof.gnark'
   let proofFileNegA = proofFile + '.negA'
   let proofFileB = proofFile + '.B'
   let proofFileC = proofFile + '.C'
@@ -22,7 +22,7 @@ async function run (runtimeEnv, deployer) {
   let timestamp = inputBeforeHash.slice(0, 8)
   let content = inputBeforeHash.slice(8)
 
-  const appID = process.env['ALGORAND_APP_ID'] ? Number(process.env['ALGORAND_APP_ID']) : 2;
+  const appID = Number(process.env['ALGORAND_APP_ID'] ?? 2)
 
   const optInParams = {
     type: types.TransactionType.OptInToApp,
