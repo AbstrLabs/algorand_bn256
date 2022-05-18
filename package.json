@@ -10,24 +10,5 @@
   "devDependencies": {
     "chai": "^4.3.6"
   },
-  "packageManager": "yarn@3.2.0",
-  "resolutions": {
-    "example-asa": "link:/home/bo/Downloads/src/algo-builder/examples/asa",
-    "algorand-bond": "link:/home/bo/Downloads/src/algo-builder/examples/bond",
-    "crowdfunding-application": "link:/home/bo/Downloads/src/algo-builder/examples/crowdfunding",
-    "dao": "link:/home/bo/Downloads/src/algo-builder/examples/dao",
-    "htlc-pyteal": "link:/home/bo/Downloads/src/algo-builder/examples/htlc-pyteal-ts",
-    "example-multisig": "link:/home/bo/Downloads/src/algo-builder/examples/multisig",
-    "nft-pyteal": "link:/home/bo/Downloads/src/algo-builder/examples/nft",
-    "permissioned-token": "link:/home/bo/Downloads/src/algo-builder/examples/permissioned-token",
-    "permissioned-token-freezing": "link:/home/bo/Downloads/src/algo-builder/examples/permissioned-token-freezing",
-    "permissioned-voting-pyteal": "link:/home/bo/Downloads/src/algo-builder/examples/permissioned-voting",
-    "ref-templates": "link:/home/bo/Downloads/src/algo-builder/examples/ref-templates",
-    "signed-txn-example": "link:/home/bo/Downloads/src/algo-builder/examples/signed-txn",
-    "stateful-counter": "link:/home/bo/Downloads/src/algo-builder/examples/stateful-counter",
-    "unique-nft-asa": "link:/home/bo/Downloads/src/algo-builder/examples/unique-nft-asa",
-    "@algo-builder/runtime": "link:/home/bo/Downloads/src/algo-builder/packages/runtime",
-    "@types/download-git-repo": "link:/home/bo/Downloads/src/algo-builder/packages/types-download-git-repo",
-    "@algo-builder/web": "link:/home/bo/Downloads/src/algo-builder/packages/web"
-  }
+  "packageManager": "yarn@3.2.0"
 }
